@@ -6,6 +6,10 @@ const startCommand = async (ctx) => {
     console.log('Пользователь запустил бота');
 
     try {
+
+        ctx.session = {}; // Обнуляем всю сессию
+        // Если вы хотите обнулить только определенные данные сессии:
+        ctx.session.genderChoice = null;
         // Отправляем изображение с клавиатурой и текстом приветствия
         const imageUrl = 'https://raw.githubusercontent.com/ospreystudio/photo-gallery/main/logo.jpg';
         await ctx.replyWithPhoto({ url: imageUrl });
