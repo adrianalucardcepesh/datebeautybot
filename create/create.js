@@ -1,6 +1,8 @@
 const { Telegraf, Markup, Scenes, session } = require('telegraf');
+// Сцена 'city'
+const axios = require('axios');
 
-
+const { startCommand } = require ("../keyboards/greatKey");
 
 const fs = require('fs');
 const path = require('path');
@@ -8,15 +10,126 @@ const fetch = require('node-fetch');
 
 function createScenes(bot) {
 
-
-// Сцена 'city'
     const cityScene = new Scenes.BaseScene('city');
-    cityScene.enter((ctx) => ctx.reply('Теперь напишите город в котором вы проживаете 🌃 :'));
 
-    cityScene.on('text', (ctx) => {
-        ctx.session.city = ctx.message.text;
+    cityScene.enter(async (ctx) => {
+        renderCityPage(ctx, 0); // Страница начинается с 0
+    });
+    async function renderCityPage(ctx, currentPage) {
+        const ITEMS_PER_PAGE = 10; // Define how many items you want per page
+        try {
+            // Get cities list from API
+            const response = await axios.get('https://raw.githubusercontent.com/adrianalucardcepesh/russian-cities-json/main/cities.json');
 
-        ctx.scene.enter('age');
+            // Sort cities alphabetically
+            const cities = response.data.map(city => city.name).sort((a, b) => a.localeCompare(b));
+
+            // Calculate cities for the current page
+            const pageCities = cities.slice(currentPage * ITEMS_PER_PAGE, (currentPage + 1) * ITEMS_PER_PAGE);
+
+            // Create city buttons for the current page
+            const cityButtons = pageCities.map((city, index) =>
+                Markup.button.callback(city, `city_select_${index + currentPage * ITEMS_PER_PAGE}`));
+
+            // Create navigation buttons
+            const navigationButtons = [];
+            if (currentPage > 0) {
+                navigationButtons.push(Markup.button.callback('⬅️ Назад', `page_${currentPage - 1}`));
+            }
+            if ((currentPage + 1) * ITEMS_PER_PAGE < cities.length) {
+                navigationButtons.push(Markup.button.callback('Вперед ➡️', `page_${currentPage + 1}`));
+            }
+
+
+
+            // Combine city buttons with navigation buttons
+            const keyboard = Markup.inlineKeyboard([...cityButtons, ...navigationButtons], { columns: 2 }).resize();
+
+            await ctx.reply('Выберите свой город: 🏙 ', keyboard);
+
+            let text = `Что бы быстрее найти свой город, напишите его название: 👇  `;
+            ctx.reply(text, {
+                reply_markup: {
+                    keyboard: [
+                        [{text: 'Вернуться в главное меню'}],
+                    ],
+                    resize_keyboard: true,
+                    one_time_keyboard: true,
+                },
+            });
+
+
+        } catch (error) {
+            console.error('Error fetching city data:', error);
+            await ctx.reply('An error occurred while fetching the list of cities.');
+        }
+    }
+
+    const ITEMS_PER_PAGE = 5;
+
+
+    cityScene.on('text', async (ctx) => {
+        // Ваша функция поиска города здесь
+        await searchForCity(ctx.message.text, ctx);
+    });
+
+    async function searchForCity(query, ctx) {
+        try {
+            const response = await axios.get('https://raw.githubusercontent.com/adrianalucardcepesh/russian-cities-json/main/cities.json');
+            const cities = response.data.map(city => city.name).sort((a, b) => a.localeCompare(b));
+
+            // Фильтруем массив городов основываясь на запросе пользователя
+            const searchResults = cities.filter(city => city.toLowerCase().includes(query.toLowerCase()));
+
+            if (searchResults.length === 0) {
+                // Ничего не найдено. Можете сообщить об этом пользователю.
+                await ctx.reply('Город не найден. Попробуйте написать что-то еще.');
+                return;
+            }
+
+            // Подразумевается, что currentPage уже определена (например, в контексте пользователя)
+            let currentPage = 0; // Это значение могло быть получено из ctx.session или другой переменной, отвечающей за состояние сессии
+
+            // Создаем кнопки для результатов поиска, используя новую логику
+            const cityButtons = searchResults.map((city, index) =>
+                Markup.button.callback(city, `select_${index + currentPage * ITEMS_PER_PAGE}`)
+            );
+
+            // Клавиатура с результатами поиска
+            const keyboard = Markup.inlineKeyboard(cityButtons, { columns: 2 });
+
+            await ctx.reply('Результаты поиска 👀 : \n\n ' + 'Теперь выбирите его 🤙🏼 ', keyboard);
+        } catch (error) {
+            console.error('Error searching cities:', error);
+            await ctx.reply('Произошла ошибка во время поиска города.');
+        }
+    }
+// Обрабатываем callback от нажатия кнопок городов
+    cityScene.action(/select_(\d+)/, async (ctx) => {
+        // Добавьте здесь логику обработки выбранного города...
+        await ctx.answerCbQuery();
+    });
+
+// Обрабатываем callback от кнопок навигации
+    cityScene.action(/page_(\d+)/, async (ctx) => {
+        const newPage = parseInt(ctx.match[1]); // Получаем номер страницы из callback_data
+        await renderCityPage(ctx, newPage); // Перерендериваем страницу с новым номером страницы
+        await ctx.answerCbQuery();
+    });
+
+
+// Позже в коде можете добавить обработчики для кнопок, например:
+    cityScene.action(/.*/, (ctx) => {
+        const selectedCity = ctx.callbackQuery.data;
+        ctx.reply(`Вы выбрали город: ${selectedCity}`);
+    });
+// Обработчик для callback_query в сцене
+    cityScene.on('callback_query', (ctx) => {
+        // Сохраняем выбранный город в сессию
+        ctx.session.city = ctx.callbackQuery.data;
+        ctx.answerCbQuery(`Вы выбрали город: ${ctx.session.city}`);
+        // Переходим в следующую сцену
+        ctx.scene.enter('ageScene');
     });
 
 

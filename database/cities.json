@@ -1,0 +1,7884 @@
+[
+  {
+    "id": 1,
+    "region_id": 2,
+    "name": "Майкоп",
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 2,
+    "region_id": 3,
+    "name": "Горно-Алтайск",
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 3,
+    "region_id": 4,
+    "name": "Барнаул",
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 4,
+    "region_id": 4,
+    "name": "Бийск",
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 5,
+    "region_id": 4,
+    "name": "Рубцовск",
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 6,
+    "region_id": 4,
+    "name": "Новоалтайск",
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 7,
+    "region_id": 4,
+    "name": "Заринск",
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 8,
+    "region_id": 5,
+    "name": "Благовещенск (Амурская область)",
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 9,
+    "region_id": 5,
+    "name": "Белогорск (Амурская область)",
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 10,
+    "region_id": 5,
+    "name": "Свободный",
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 11,
+    "region_id": 6,
+    "name": "Архангельск",
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 12,
+    "region_id": 6,
+    "name": "Северодвинск",
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 13,
+    "region_id": 6,
+    "name": "Котлас",
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 14,
+    "region_id": 7,
+    "name": "Астрахань",
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 15,
+    "region_id": 7,
+    "name": "Ахтубинск",
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 16,
+    "region_id": 7,
+    "name": "Знаменск",
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 17,
+    "region_id": 8,
+    "name": "Уфа",
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 18,
+    "region_id": 8,
+    "name": "Стерлитамак",
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 19,
+    "region_id": 8,
+    "name": "Салават",
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 20,
+    "region_id": 8,
+    "name": "Нефтекамск",
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 21,
+    "region_id": 8,
+    "name": "Октябрьский",
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 22,
+    "region_id": 8,
+    "name": "Белорецк",
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 23,
+    "region_id": 8,
+    "name": "Благовещенск (Башкортостан)",
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 24,
+    "region_id": 9,
+    "name": "Белгород",
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 25,
+    "region_id": 9,
+    "name": "Старый Оскол",
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 26,
+    "region_id": 9,
+    "name": "Губкин",
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 27,
+    "region_id": 9,
+    "name": "Шебекино",
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 28,
+    "region_id": 9,
+    "name": "Новый Оскол",
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 29,
+    "region_id": 10,
+    "name": "Брянск",
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 30,
+    "region_id": 10,
+    "name": "Клинцы",
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 31,
+    "region_id": 11,
+    "name": "Улан-Удэ",
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 32,
+    "region_id": 11,
+    "name": "Северобайкальск",
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 33,
+    "region_id": 12,
+    "name": "Владимир",
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 34,
+    "region_id": 12,
+    "name": "Ковров",
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 35,
+    "region_id": 12,
+    "name": "Муром",
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 36,
+    "region_id": 12,
+    "name": "Александров",
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 37,
+    "region_id": 12,
+    "name": "Гусь-Хрустальный",
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 38,
+    "region_id": 12,
+    "name": "Киржач",
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 39,
+    "region_id": 13,
+    "name": "Волгоград",
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 40,
+    "region_id": 13,
+    "name": "Волжский",
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 41,
+    "region_id": 13,
+    "name": "Камышин",
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 42,
+    "region_id": 13,
+    "name": "Калач-на-Дону",
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 43,
+    "region_id": 14,
+    "name": "Череповец",
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 44,
+    "region_id": 14,
+    "name": "Вологда",
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 45,
+    "region_id": 14,
+    "name": "Сокол",
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 46,
+    "region_id": 15,
+    "name": "Воронеж",
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 47,
+    "region_id": 15,
+    "name": "Борисоглебск",
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 48,
+    "region_id": 15,
+    "name": "Россошь",
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 49,
+    "region_id": 15,
+    "name": "Лиски",
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 50,
+    "region_id": 15,
+    "name": "Павловск",
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 51,
+    "region_id": 16,
+    "name": "Махачкала",
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 52,
+    "region_id": 16,
+    "name": "Хасавюрт",
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 53,
+    "region_id": 16,
+    "name": "Дербент",
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 54,
+    "region_id": 17,
+    "name": "Биробиджан",
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 55,
+    "region_id": 18,
+    "name": "Чита",
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 56,
+    "region_id": 18,
+    "name": "Краснокаменск",
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 57,
+    "region_id": 19,
+    "name": "Иваново",
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 58,
+    "region_id": 19,
+    "name": "Кинешма",
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 59,
+    "region_id": 19,
+    "name": "Шуя",
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 60,
+    "region_id": 20,
+    "name": "Назрань",
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 61,
+    "region_id": 21,
+    "name": "Иркутск",
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 62,
+    "region_id": 21,
+    "name": "Братск",
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 63,
+    "region_id": 21,
+    "name": "Ангарск",
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 64,
+    "region_id": 21,
+    "name": "Усть-Илимск",
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 65,
+    "region_id": 22,
+    "name": "Нальчик",
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 66,
+    "region_id": 22,
+    "name": "Прохладный",
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 67,
+    "region_id": 23,
+    "name": "Калининград",
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 68,
+    "region_id": 23,
+    "name": "Советск (Калининградская область)",
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 69,
+    "region_id": 24,
+    "name": "Элиста",
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 70,
+    "region_id": 25,
+    "name": "Калуга",
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 71,
+    "region_id": 25,
+    "name": "Обнинск",
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 72,
+    "region_id": 26,
+    "name": "Петропавловск-Камчатский",
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 73,
+    "region_id": 26,
+    "name": "Елизово",
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 74,
+    "region_id": 26,
+    "name": "Вилючинск",
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 75,
+    "region_id": 27,
+    "name": "Черкесск",
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 76,
+    "region_id": 28,
+    "name": "Петрозаводск",
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 77,
+    "region_id": 28,
+    "name": "Кондопога",
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 78,
+    "region_id": 29,
+    "name": "Новокузнецк",
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 79,
+    "region_id": 29,
+    "name": "Кемерово",
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 80,
+    "region_id": 29,
+    "name": "Прокопьевск",
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 81,
+    "region_id": 29,
+    "name": "Ленинск-Кузнецкий",
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 82,
+    "region_id": 29,
+    "name": "Междуреченск",
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 83,
+    "region_id": 29,
+    "name": "Киселёвск",
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 84,
+    "region_id": 29,
+    "name": "Юрга",
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 85,
+    "region_id": 30,
+    "name": "Киров (Кировская область)",
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 86,
+    "region_id": 30,
+    "name": "Кирово-Чепецк",
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 87,
+    "region_id": 31,
+    "name": "Сыктывкар",
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 88,
+    "region_id": 31,
+    "name": "Ухта",
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 89,
+    "region_id": 31,
+    "name": "Воркута",
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 90,
+    "region_id": 31,
+    "name": "Печора",
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 91,
+    "region_id": 32,
+    "name": "Кострома",
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 92,
+    "region_id": 33,
+    "name": "Краснодар",
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 93,
+    "region_id": 33,
+    "name": "Сочи",
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 94,
+    "region_id": 33,
+    "name": "Новороссийск",
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 95,
+    "region_id": 33,
+    "name": "Армавир",
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 96,
+    "region_id": 33,
+    "name": "Ейск",
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 97,
+    "region_id": 33,
+    "name": "Кропоткин",
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 98,
+    "region_id": 33,
+    "name": "Туапсе",
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 99,
+    "region_id": 33,
+    "name": "Тихорецк",
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 100,
+    "region_id": 33,
+    "name": "Анапа",
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 101,
+    "region_id": 33,
+    "name": "Белореченск",
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 102,
+    "region_id": 33,
+    "name": "Геленджик",
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 103,
+    "region_id": 34,
+    "name": "Красноярск",
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 104,
+    "region_id": 34,
+    "name": "Норильск",
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 105,
+    "region_id": 34,
+    "name": "Ачинск",
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 106,
+    "region_id": 34,
+    "name": "Канск",
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 107,
+    "region_id": 34,
+    "name": "Железногорск (Красноярский край)",
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 108,
+    "region_id": 34,
+    "name": "Зеленогорск",
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 109,
+    "region_id": 35,
+    "name": "Курган",
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 110,
+    "region_id": 35,
+    "name": "Шадринск",
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 111,
+    "region_id": 36,
+    "name": "Курск",
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 112,
+    "region_id": 36,
+    "name": "Железногорск (Курская область)",
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 113,
+    "region_id": 36,
+    "name": "Курчатов",
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 114,
+    "region_id": 37,
+    "name": "Гатчина",
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 115,
+    "region_id": 37,
+    "name": "Выборг",
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 116,
+    "region_id": 37,
+    "name": "Сосновый Бор",
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 117,
+    "region_id": 37,
+    "name": "Тихвин",
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 118,
+    "region_id": 37,
+    "name": "Кириши",
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 119,
+    "region_id": 37,
+    "name": "Кингисепп",
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 120,
+    "region_id": 37,
+    "name": "Всеволожск",
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 121,
+    "region_id": 37,
+    "name": "Волхов",
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 122,
+    "region_id": 37,
+    "name": "Сертолово",
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 123,
+    "region_id": 37,
+    "name": "Луга",
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 124,
+    "region_id": 37,
+    "name": "Тосно",
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 125,
+    "region_id": 37,
+    "name": "Сланцы",
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 126,
+    "region_id": 37,
+    "name": "Кировск (Ленинградская область)",
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 127,
+    "region_id": 37,
+    "name": "Лодейное Поле",
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 128,
+    "region_id": 37,
+    "name": "Пикалёво",
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 129,
+    "region_id": 37,
+    "name": "Отрадное",
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 130,
+    "region_id": 37,
+    "name": "Подпорожье",
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 131,
+    "region_id": 37,
+    "name": "Коммунар",
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 132,
+    "region_id": 37,
+    "name": "Приозерск",
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 133,
+    "region_id": 37,
+    "name": "Никольское",
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 134,
+    "region_id": 37,
+    "name": "Бокситогорск",
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 135,
+    "region_id": 37,
+    "name": "Светогорск",
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 136,
+    "region_id": 37,
+    "name": "Сясьстрой",
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 137,
+    "region_id": 37,
+    "name": "Шлиссельбург",
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 138,
+    "region_id": 37,
+    "name": "Сиверский",
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 139,
+    "region_id": 37,
+    "name": "Волосово",
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 140,
+    "region_id": 37,
+    "name": "Ивангород",
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 141,
+    "region_id": 37,
+    "name": "Вырица",
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 142,
+    "region_id": 37,
+    "name": "Поселок им. Морозова",
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 143,
+    "region_id": 38,
+    "name": "Липецк",
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 144,
+    "region_id": 38,
+    "name": "Елец",
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 145,
+    "region_id": 39,
+    "name": "Магадан",
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 146,
+    "region_id": 40,
+    "name": "Йошкар-Ола",
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 147,
+    "region_id": 40,
+    "name": "Волжск",
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 148,
+    "region_id": 41,
+    "name": "Саранск",
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 149,
+    "region_id": 41,
+    "name": "Рузаевка",
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 150,
+    "region_id": 43,
+    "name": "Балашиха",
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 151,
+    "region_id": 43,
+    "name": "Химки",
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 152,
+    "region_id": 43,
+    "name": "Подольск",
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 153,
+    "region_id": 43,
+    "name": "Королёв",
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 154,
+    "region_id": 43,
+    "name": "Мытищи",
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 155,
+    "region_id": 43,
+    "name": "Люберцы",
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 156,
+    "region_id": 43,
+    "name": "Коломна",
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 157,
+    "region_id": 43,
+    "name": "Электросталь",
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 158,
+    "region_id": 43,
+    "name": "Одинцово",
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 159,
+    "region_id": 43,
+    "name": "Железнодорожный (Балашиха)",
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 160,
+    "region_id": 43,
+    "name": "Серпухов",
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 161,
+    "region_id": 43,
+    "name": "Орехово-Зуево",
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 162,
+    "region_id": 43,
+    "name": "Ногинск",
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 163,
+    "region_id": 43,
+    "name": "Щёлково",
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 164,
+    "region_id": 43,
+    "name": "Сергиев Посад",
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 165,
+    "region_id": 43,
+    "name": "Жуковский",
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 166,
+    "region_id": 43,
+    "name": "Красногорск",
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 167,
+    "region_id": 43,
+    "name": "Пушкино",
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 168,
+    "region_id": 43,
+    "name": "Воскресенск",
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 169,
+    "region_id": 43,
+    "name": "Домодедово",
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 170,
+    "region_id": 43,
+    "name": "Раменское",
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 171,
+    "region_id": 43,
+    "name": "Реутов",
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 172,
+    "region_id": 43,
+    "name": "Долгопрудный",
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 173,
+    "region_id": 43,
+    "name": "Клин",
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 174,
+    "region_id": 43,
+    "name": "Чехов",
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 175,
+    "region_id": 43,
+    "name": "Наро-Фоминск",
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 176,
+    "region_id": 43,
+    "name": "Лобня",
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 177,
+    "region_id": 43,
+    "name": "Егорьевск",
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 178,
+    "region_id": 43,
+    "name": "Ступино",
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 179,
+    "region_id": 43,
+    "name": "Дмитров",
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 180,
+    "region_id": 43,
+    "name": "Дубна",
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 181,
+    "region_id": 43,
+    "name": "Павловский Посад",
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 182,
+    "region_id": 43,
+    "name": "Солнечногорск",
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 183,
+    "region_id": 43,
+    "name": "Ивантеевка",
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 184,
+    "region_id": 42,
+    "name": "Климовск (Москва)",
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 185,
+    "region_id": 43,
+    "name": "Видное",
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 186,
+    "region_id": 43,
+    "name": "Фрязино",
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 187,
+    "region_id": 43,
+    "name": "Лыткарино",
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 188,
+    "region_id": 43,
+    "name": "Дзержинский",
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 189,
+    "region_id": 43,
+    "name": "Кашира",
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 190,
+    "region_id": 43,
+    "name": "Протвино",
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 191,
+    "region_id": 42,
+    "name": "Троицк (Москва)",
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 192,
+    "region_id": 42,
+    "name": "Юбилейный (Москва)",
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 193,
+    "region_id": 43,
+    "name": "Истра",
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 194,
+    "region_id": 43,
+    "name": "Нахабино",
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 195,
+    "region_id": 43,
+    "name": "Краснознаменск (Московская область)",
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 196,
+    "region_id": 43,
+    "name": "Луховицы",
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 197,
+    "region_id": 42,
+    "name": "Щербинка (Москва)",
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 198,
+    "region_id": 43,
+    "name": "Шатура",
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 199,
+    "region_id": 43,
+    "name": "Ликино-Дулёво",
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 200,
+    "region_id": 43,
+    "name": "Можайск",
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 201,
+    "region_id": 43,
+    "name": "Томилино",
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 202,
+    "region_id": 43,
+    "name": "Дедовск",
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 203,
+    "region_id": 43,
+    "name": "Красноармейск (Московская область)",
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 204,
+    "region_id": 43,
+    "name": "Кубинка",
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 205,
+    "region_id": 43,
+    "name": "Озёры",
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 206,
+    "region_id": 43,
+    "name": "Зарайск",
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 207,
+    "region_id": 43,
+    "name": "Калининец",
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 208,
+    "region_id": 43,
+    "name": "Волоколамск",
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 209,
+    "region_id": 43,
+    "name": "Лосино-Петровский",
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 210,
+    "region_id": 43,
+    "name": "Старая Купавна",
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 211,
+    "region_id": 43,
+    "name": "Рошаль",
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 212,
+    "region_id": 43,
+    "name": "Электрогорск",
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 213,
+    "region_id": 43,
+    "name": "Электроугли",
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 214,
+    "region_id": 43,
+    "name": "Черноголовка",
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 215,
+    "region_id": 43,
+    "name": "Котельники",
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 216,
+    "region_id": 43,
+    "name": "Пущино",
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 217,
+    "region_id": 43,
+    "name": "Красково",
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 218,
+    "region_id": 44,
+    "name": "Мурманск",
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 219,
+    "region_id": 44,
+    "name": "Апатиты",
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 220,
+    "region_id": 44,
+    "name": "Североморск",
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 221,
+    "region_id": 45,
+    "name": "Нарьян-Мар",
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 222,
+    "region_id": 46,
+    "name": "Нижний Новгород",
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 223,
+    "region_id": 46,
+    "name": "Дзержинск",
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 224,
+    "region_id": 46,
+    "name": "Арзамас",
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 225,
+    "region_id": 46,
+    "name": "Саров",
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 226,
+    "region_id": 46,
+    "name": "Бор",
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 227,
+    "region_id": 46,
+    "name": "Кстово",
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 228,
+    "region_id": 46,
+    "name": "Павлово",
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 229,
+    "region_id": 46,
+    "name": "Выкса",
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 230,
+    "region_id": 46,
+    "name": "Балахна",
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 231,
+    "region_id": 47,
+    "name": "Великий Новгород",
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 232,
+    "region_id": 47,
+    "name": "Боровичи",
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 233,
+    "region_id": 47,
+    "name": "Старая Русса",
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 234,
+    "region_id": 48,
+    "name": "Новосибирск",
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 235,
+    "region_id": 48,
+    "name": "Бердск",
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 236,
+    "region_id": 48,
+    "name": "Куйбышев",
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 237,
+    "region_id": 49,
+    "name": "Омск",
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 238,
+    "region_id": 50,
+    "name": "Оренбург",
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 239,
+    "region_id": 50,
+    "name": "Орск",
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 240,
+    "region_id": 50,
+    "name": "Новотроицк",
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 241,
+    "region_id": 50,
+    "name": "Бузулук",
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 242,
+    "region_id": 51,
+    "name": "Орёл",
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 243,
+    "region_id": 51,
+    "name": "Ливны",
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 244,
+    "region_id": 51,
+    "name": "Мценск",
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 245,
+    "region_id": 52,
+    "name": "Пенза",
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 246,
+    "region_id": 52,
+    "name": "Кузнецк",
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 247,
+    "region_id": 52,
+    "name": "Заречный (Пензенская область)",
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 248,
+    "region_id": 52,
+    "name": "Каменка",
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 249,
+    "region_id": 53,
+    "name": "Пермь",
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 250,
+    "region_id": 53,
+    "name": "Березники",
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 251,
+    "region_id": 53,
+    "name": "Соликамск",
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 252,
+    "region_id": 53,
+    "name": "Чайковский",
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 253,
+    "region_id": 53,
+    "name": "Лысьва",
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 254,
+    "region_id": 53,
+    "name": "Кунгур",
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 255,
+    "region_id": 53,
+    "name": "Краснокамск",
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 256,
+    "region_id": 54,
+    "name": "Владивосток",
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 257,
+    "region_id": 54,
+    "name": "Находка",
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 258,
+    "region_id": 54,
+    "name": "Уссурийск",
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 259,
+    "region_id": 54,
+    "name": "Артём",
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 260,
+    "region_id": 55,
+    "name": "Псков",
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 261,
+    "region_id": 55,
+    "name": "Великие Луки",
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 262,
+    "region_id": 56,
+    "name": "Ростов-на-Дону",
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 263,
+    "region_id": 56,
+    "name": "Таганрог",
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 264,
+    "region_id": 56,
+    "name": "Шахты",
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 265,
+    "region_id": 56,
+    "name": "Новочеркасск",
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 266,
+    "region_id": 56,
+    "name": "Волгодонск",
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 267,
+    "region_id": 56,
+    "name": "Новошахтинск",
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 268,
+    "region_id": 56,
+    "name": "Батайск",
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 269,
+    "region_id": 56,
+    "name": "Каменск-Шахтинский",
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 270,
+    "region_id": 56,
+    "name": "Азов",
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 271,
+    "region_id": 56,
+    "name": "Гуково",
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 272,
+    "region_id": 56,
+    "name": "Сальск",
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 273,
+    "region_id": 56,
+    "name": "Донецк",
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 274,
+    "region_id": 56,
+    "name": "Белая Калитва",
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 275,
+    "region_id": 57,
+    "name": "Рязань",
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 276,
+    "region_id": 57,
+    "name": "Касимов",
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 277,
+    "region_id": 58,
+    "name": "Самара",
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 278,
+    "region_id": 58,
+    "name": "Тольятти",
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 279,
+    "region_id": 58,
+    "name": "Сызрань",
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 280,
+    "region_id": 58,
+    "name": "Новокуйбышевск",
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 281,
+    "region_id": 58,
+    "name": "Чапаевск",
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 282,
+    "region_id": 58,
+    "name": "Жигулёвск",
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 283,
+    "region_id": 60,
+    "name": "Саратов",
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 284,
+    "region_id": 60,
+    "name": "Энгельс",
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 285,
+    "region_id": 60,
+    "name": "Балаково",
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 286,
+    "region_id": 60,
+    "name": "Балашов",
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 287,
+    "region_id": 60,
+    "name": "Вольск",
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 288,
+    "region_id": 61,
+    "name": "Якутск",
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 289,
+    "region_id": 61,
+    "name": "Нерюнгри",
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 290,
+    "region_id": 61,
+    "name": "Мирный",
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 291,
+    "region_id": 62,
+    "name": "Южно-Сахалинск",
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 292,
+    "region_id": 63,
+    "name": "Екатеринбург",
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 293,
+    "region_id": 63,
+    "name": "Нижний Тагил",
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 294,
+    "region_id": 63,
+    "name": "Каменск-Уральский",
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 295,
+    "region_id": 63,
+    "name": "Первоуральск",
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 296,
+    "region_id": 63,
+    "name": "Серов",
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 297,
+    "region_id": 63,
+    "name": "Новоуральск",
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 298,
+    "region_id": 63,
+    "name": "Асбест",
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 299,
+    "region_id": 63,
+    "name": "Полевской",
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 300,
+    "region_id": 63,
+    "name": "Ревда",
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 301,
+    "region_id": 63,
+    "name": "Краснотурьинск",
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 302,
+    "region_id": 64,
+    "name": "Владикавказ",
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 303,
+    "region_id": 64,
+    "name": "Моздок",
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 304,
+    "region_id": 65,
+    "name": "Смоленск",
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 305,
+    "region_id": 65,
+    "name": "Вязьма",
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 306,
+    "region_id": 66,
+    "name": "Ставрополь",
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 307,
+    "region_id": 66,
+    "name": "Пятигорск",
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 308,
+    "region_id": 66,
+    "name": "Кисловодск",
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 309,
+    "region_id": 66,
+    "name": "Ессентуки",
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 310,
+    "region_id": 66,
+    "name": "Минеральные Воды",
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 311,
+    "region_id": 66,
+    "name": "Будённовск",
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 312,
+    "region_id": 67,
+    "name": "Тамбов",
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 313,
+    "region_id": 67,
+    "name": "Мичуринск",
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 314,
+    "region_id": 68,
+    "name": "Казань",
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 315,
+    "region_id": 68,
+    "name": "Набережные Челны",
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 316,
+    "region_id": 68,
+    "name": "Нижнекамск",
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 317,
+    "region_id": 68,
+    "name": "Альметьевск",
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 318,
+    "region_id": 68,
+    "name": "Зеленодольск",
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 319,
+    "region_id": 68,
+    "name": "Бугульма",
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 320,
+    "region_id": 69,
+    "name": "Тверь",
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 321,
+    "region_id": 69,
+    "name": "Ржев",
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 322,
+    "region_id": 70,
+    "name": "Томск",
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 323,
+    "region_id": 70,
+    "name": "Северск",
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 324,
+    "region_id": 71,
+    "name": "Тула",
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 325,
+    "region_id": 71,
+    "name": "Новомосковск",
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 327,
+    "region_id": 71,
+    "name": "Узловая",
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 328,
+    "region_id": 72,
+    "name": "Кызыл",
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 329,
+    "region_id": 73,
+    "name": "Тюмень",
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 330,
+    "region_id": 73,
+    "name": "Тобольск",
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 331,
+    "region_id": 74,
+    "name": "Ижевск",
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 332,
+    "region_id": 74,
+    "name": "Сарапул",
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 333,
+    "region_id": 74,
+    "name": "Глазов",
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 334,
+    "region_id": 74,
+    "name": "Воткинск",
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 335,
+    "region_id": 75,
+    "name": "Ульяновск",
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 336,
+    "region_id": 75,
+    "name": "Димитровград",
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 337,
+    "region_id": 76,
+    "name": "Хабаровск",
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 338,
+    "region_id": 76,
+    "name": "Комсомольск-на-Амуре",
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 339,
+    "region_id": 76,
+    "name": "Амурск",
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 340,
+    "region_id": 77,
+    "name": "Абакан",
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 341,
+    "region_id": 77,
+    "name": "Черногорск",
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 342,
+    "region_id": 78,
+    "name": "Сургут",
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 343,
+    "region_id": 78,
+    "name": "Нижневартовск",
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 344,
+    "region_id": 78,
+    "name": "Нефтеюганск",
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 345,
+    "region_id": 78,
+    "name": "Ханты-Мансийск",
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 346,
+    "region_id": 79,
+    "name": "Челябинск",
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 347,
+    "region_id": 79,
+    "name": "Магнитогорск",
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 348,
+    "region_id": 79,
+    "name": "Златоуст",
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 349,
+    "region_id": 79,
+    "name": "Миасс",
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 350,
+    "region_id": 79,
+    "name": "Копейск",
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 351,
+    "region_id": 79,
+    "name": "Озёрск",
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 352,
+    "region_id": 79,
+    "name": "Троицк",
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 353,
+    "region_id": 79,
+    "name": "Снежинск",
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 354,
+    "region_id": 79,
+    "name": "Сатка",
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 355,
+    "region_id": 80,
+    "name": "Грозный",
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 356,
+    "region_id": 80,
+    "name": "Урус-Мартан",
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 357,
+    "region_id": 81,
+    "name": "Чебоксары",
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 358,
+    "region_id": 81,
+    "name": "Новочебоксарск",
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 360,
+    "region_id": 83,
+    "name": "Новый Уренгой",
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 361,
+    "region_id": 83,
+    "name": "Ноябрьск",
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 362,
+    "region_id": 84,
+    "name": "Ярославль",
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 363,
+    "region_id": 84,
+    "name": "Рыбинск",
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 364,
+    "region_id": 84,
+    "name": "Переславль-Залесский",
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 365,
+    "region_id": 42,
+    "name": "Москва",
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 366,
+    "region_id": 59,
+    "name": "Санкт-Петербург",
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 367,
+    "region_id": 77,
+    "name": "Абаза",
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 369,
+    "region_id": 50,
+    "name": "Абдулино",
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 370,
+    "region_id": 33,
+    "name": "Абинск",
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 371,
+    "region_id": 8,
+    "name": "Агидель",
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 372,
+    "region_id": 68,
+    "name": "Агрыз",
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 373,
+    "region_id": 2,
+    "name": "Адыгейск",
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 374,
+    "region_id": 68,
+    "name": "Азнакаево",
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 376,
+    "region_id": 72,
+    "name": "Ак-Довурак",
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 377,
+    "region_id": 56,
+    "name": "Аксай",
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 378,
+    "region_id": 64,
+    "name": "Алагир",
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 379,
+    "region_id": 63,
+    "name": "Алапаевск",
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 380,
+    "region_id": 81,
+    "name": "Алатырь",
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 381,
+    "region_id": 61,
+    "name": "Алдан",
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 382,
+    "region_id": 4,
+    "name": "Алейск",
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 384,
+    "region_id": 53,
+    "name": "Александровск",
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 385,
+    "region_id": 62,
+    "name": "Александровск-Сахалинский",
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 386,
+    "region_id": 9,
+    "name": "Алексеевка",
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 387,
+    "region_id": 71,
+    "name": "Алексин",
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 388,
+    "region_id": 21,
+    "name": "Алзамай",
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 391,
+    "region_id": 82,
+    "name": "Анадырь",
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 394,
+    "region_id": 69,
+    "name": "Андреаполь",
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 395,
+    "region_id": 29,
+    "name": "Анжеро-Судженск",
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 396,
+    "region_id": 62,
+    "name": "Анива",
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 398,
+    "region_id": 43,
+    "name": "Апрелевка",
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 399,
+    "region_id": 33,
+    "name": "Апшеронск",
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 400,
+    "region_id": 63,
+    "name": "Арамиль",
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 401,
+    "region_id": 80,
+    "name": "Аргун",
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 402,
+    "region_id": 41,
+    "name": "Ардатов",
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 403,
+    "region_id": 64,
+    "name": "Ардон",
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 405,
+    "region_id": 60,
+    "name": "Аркадак",
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 407,
+    "region_id": 54,
+    "name": "Арсеньев",
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 408,
+    "region_id": 68,
+    "name": "Арск",
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 410,
+    "region_id": 34,
+    "name": "Артёмовск",
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 411,
+    "region_id": 63,
+    "name": "Артёмовский",
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 414,
+    "region_id": 70,
+    "name": "Асино",
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 416,
+    "region_id": 60,
+    "name": "Аткарск",
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 419,
+    "region_id": 79,
+    "name": "Аша",
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 420,
+    "region_id": 14,
+    "name": "Бабаево",
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 421,
+    "region_id": 11,
+    "name": "Бабушкин",
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 422,
+    "region_id": 68,
+    "name": "Бавлы",
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 423,
+    "region_id": 23,
+    "name": "Багратионовск",
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 424,
+    "region_id": 21,
+    "name": "Байкальск",
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 425,
+    "region_id": 8,
+    "name": "Баймак",
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 426,
+    "region_id": 79,
+    "name": "Бакал",
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 427,
+    "region_id": 22,
+    "name": "Баксан",
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 428,
+    "region_id": 25,
+    "name": "Балабаново",
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 433,
+    "region_id": 18,
+    "name": "Балей",
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 434,
+    "region_id": 23,
+    "name": "Балтийск",
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 435,
+    "region_id": 48,
+    "name": "Барабинск",
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 437,
+    "region_id": 75,
+    "name": "Барыш",
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 439,
+    "region_id": 69,
+    "name": "Бежецк",
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 440,
+    "region_id": 71,
+    "name": "Белёв",
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 442,
+    "region_id": 30,
+    "name": "Белая Холуница",
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 444,
+    "region_id": 8,
+    "name": "Белебей",
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 445,
+    "region_id": 52,
+    "name": "Белинский",
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 446,
+    "region_id": 29,
+    "name": "Белово",
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 448,
+    "region_id": 14,
+    "name": "Белозерск",
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 449,
+    "region_id": 4,
+    "name": "Белокуриха",
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 450,
+    "region_id": 28,
+    "name": "Беломорск",
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 453,
+    "region_id": 25,
+    "name": "Белоусово",
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 454,
+    "region_id": 78,
+    "name": "Белоярский",
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 455,
+    "region_id": 69,
+    "name": "Белый",
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 456,
+    "region_id": 29,
+    "name": "Березовский (Кемеровская область)",
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 457,
+    "region_id": 63,
+    "name": "Березовский (Свердловская область)",
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 460,
+    "region_id": 64,
+    "name": "Беслан",
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 462,
+    "region_id": 76,
+    "name": "Бикин",
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 463,
+    "region_id": 82,
+    "name": "Билибино",
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 465,
+    "region_id": 8,
+    "name": "Бирск",
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 466,
+    "region_id": 21,
+    "name": "Бирюсинск",
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 467,
+    "region_id": 9,
+    "name": "Бирюч",
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 470,
+    "region_id": 66,
+    "name": "Благодарный",
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 471,
+    "region_id": 15,
+    "name": "Бобров",
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 472,
+    "region_id": 63,
+    "name": "Богданович",
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 473,
+    "region_id": 71,
+    "name": "Богородицк",
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 474,
+    "region_id": 46,
+    "name": "Богородск",
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 475,
+    "region_id": 34,
+    "name": "Боготол",
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 476,
+    "region_id": 15,
+    "name": "Богучар",
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 477,
+    "region_id": 21,
+    "name": "Бодайбо",
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 479,
+    "region_id": 68,
+    "name": "Болгар",
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 480,
+    "region_id": 69,
+    "name": "Бологое",
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 481,
+    "region_id": 48,
+    "name": "Болотное",
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 482,
+    "region_id": 71,
+    "name": "Болохово",
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 483,
+    "region_id": 51,
+    "name": "Болхов",
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 484,
+    "region_id": 54,
+    "name": "Большой Камень",
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 486,
+    "region_id": 18,
+    "name": "Борзя",
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 489,
+    "region_id": 25,
+    "name": "Боровск",
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 490,
+    "region_id": 34,
+    "name": "Бородино",
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 492,
+    "region_id": 43,
+    "name": "Бронницы",
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 495,
+    "region_id": 50,
+    "name": "Бугуруслан",
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 498,
+    "region_id": 68,
+    "name": "Буинск",
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 499,
+    "region_id": 32,
+    "name": "Буй",
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 500,
+    "region_id": 16,
+    "name": "Буйнакск",
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 501,
+    "region_id": 15,
+    "name": "Бутурлиновка",
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 502,
+    "region_id": 47,
+    "name": "Валдай",
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 503,
+    "region_id": 9,
+    "name": "Валуйки",
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 504,
+    "region_id": 65,
+    "name": "Велиж",
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 507,
+    "region_id": 14,
+    "name": "Великий Устюг",
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 508,
+    "region_id": 6,
+    "name": "Вельск",
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 509,
+    "region_id": 71,
+    "name": "Венёв",
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 510,
+    "region_id": 53,
+    "name": "Верещагино",
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 511,
+    "region_id": 43,
+    "name": "Верея",
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 512,
+    "region_id": 79,
+    "name": "Верхнеуральск",
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 513,
+    "region_id": 63,
+    "name": "Верхний Тагил",
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 514,
+    "region_id": 79,
+    "name": "Верхний Уфалей",
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 515,
+    "region_id": 63,
+    "name": "Верхняя Пышма",
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 516,
+    "region_id": 63,
+    "name": "Верхняя Салда",
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 517,
+    "region_id": 63,
+    "name": "Верхняя Тура",
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 518,
+    "region_id": 63,
+    "name": "Верхотурье",
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 519,
+    "region_id": 61,
+    "name": "Верхоянск",
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 520,
+    "region_id": 69,
+    "name": "Весьегонск",
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 521,
+    "region_id": 46,
+    "name": "Ветлуга",
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 523,
+    "region_id": 61,
+    "name": "Вилюйск",
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 525,
+    "region_id": 21,
+    "name": "Вихоревка",
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 526,
+    "region_id": 19,
+    "name": "Вичуга",
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 532,
+    "region_id": 32,
+    "name": "Волгореченск",
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 536,
+    "region_id": 46,
+    "name": "Володарск",
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 540,
+    "region_id": 63,
+    "name": "Волчанск",
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 544,
+    "region_id": 46,
+    "name": "Ворсма",
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 548,
+    "region_id": 31,
+    "name": "Вуктыл",
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 551,
+    "region_id": 43,
+    "name": "Высоковск",
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 552,
+    "region_id": 37,
+    "name": "Высоцк",
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 553,
+    "region_id": 14,
+    "name": "Вытегра",
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 554,
+    "region_id": 69,
+    "name": "Вышний Волочёк",
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 555,
+    "region_id": 76,
+    "name": "Вяземский",
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 556,
+    "region_id": 12,
+    "name": "Вязники",
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 558,
+    "region_id": 30,
+    "name": "Вятские Поляны",
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 559,
+    "region_id": 19,
+    "name": "Гаврилов Посад",
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 560,
+    "region_id": 84,
+    "name": "Гаврилов-Ям",
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 561,
+    "region_id": 65,
+    "name": "Гагарин",
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 562,
+    "region_id": 44,
+    "name": "Гаджиево",
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 563,
+    "region_id": 50,
+    "name": "Гай",
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 564,
+    "region_id": 32,
+    "name": "Галич",
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 566,
+    "region_id": 23,
+    "name": "Гвардейск",
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 567,
+    "region_id": 55,
+    "name": "Гдов",
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 569,
+    "region_id": 66,
+    "name": "Георгиевск",
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 571,
+    "region_id": 43,
+    "name": "Голицыно",
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 572,
+    "region_id": 46,
+    "name": "Горбатов",
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 574,
+    "region_id": 53,
+    "name": "Горнозаводск",
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 575,
+    "region_id": 4,
+    "name": "Горняк",
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 576,
+    "region_id": 46,
+    "name": "Городец",
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 577,
+    "region_id": 52,
+    "name": "Городище",
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 578,
+    "region_id": 24,
+    "name": "Городовиковск",
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 579,
+    "region_id": 12,
+    "name": "Гороховец",
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 580,
+    "region_id": 33,
+    "name": "Горячий Ключ",
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 581,
+    "region_id": 9,
+    "name": "Грайворон",
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 582,
+    "region_id": 53,
+    "name": "Гремячинск",
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 584,
+    "region_id": 38,
+    "name": "Грязи",
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 585,
+    "region_id": 14,
+    "name": "Грязовец",
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 586,
+    "region_id": 53,
+    "name": "Губаха",
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 588,
+    "region_id": 83,
+    "name": "Губкинский",
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 589,
+    "region_id": 80,
+    "name": "Гудермес",
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 591,
+    "region_id": 33,
+    "name": "Гулькевичи",
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 592,
+    "region_id": 23,
+    "name": "Гурьевск (Калининградская область)",
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 593,
+    "region_id": 29,
+    "name": "Гурьевск (Кемеровская область)",
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 594,
+    "region_id": 23,
+    "name": "Гусев",
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 595,
+    "region_id": 11,
+    "name": "Гусиноозёрск",
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 597,
+    "region_id": 8,
+    "name": "Давлеканово",
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 598,
+    "region_id": 16,
+    "name": "Дагестанские Огни",
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 599,
+    "region_id": 35,
+    "name": "Далматово",
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 600,
+    "region_id": 54,
+    "name": "Дальнегорск",
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 601,
+    "region_id": 54,
+    "name": "Дальнереченск",
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 602,
+    "region_id": 84,
+    "name": "Данилов",
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 603,
+    "region_id": 38,
+    "name": "Данков",
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 604,
+    "region_id": 63,
+    "name": "Дегтярск",
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 606,
+    "region_id": 65,
+    "name": "Демидов",
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 608,
+    "region_id": 65,
+    "name": "Десногорск",
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 611,
+    "region_id": 34,
+    "name": "Дивногорск",
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 612,
+    "region_id": 64,
+    "name": "Дигора",
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 614,
+    "region_id": 36,
+    "name": "Дмитриев",
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 616,
+    "region_id": 51,
+    "name": "Дмитровск",
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 617,
+    "region_id": 55,
+    "name": "Дно",
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 618,
+    "region_id": 53,
+    "name": "Добрянка",
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 620,
+    "region_id": 62,
+    "name": "Долинск",
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 623,
+    "region_id": 71,
+    "name": "Донской",
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 624,
+    "region_id": 65,
+    "name": "Дорогобуж",
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 625,
+    "region_id": 43,
+    "name": "Дрезна",
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 627,
+    "region_id": 13,
+    "name": "Дубовка",
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 628,
+    "region_id": 34,
+    "name": "Дудинка",
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 629,
+    "region_id": 65,
+    "name": "Духовщина",
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 630,
+    "region_id": 8,
+    "name": "Дюртюли",
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 631,
+    "region_id": 10,
+    "name": "Дятьково",
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 635,
+    "region_id": 68,
+    "name": "Елабуга",
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 638,
+    "region_id": 65,
+    "name": "Ельня",
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 639,
+    "region_id": 79,
+    "name": "Еманжелинск",
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 640,
+    "region_id": 31,
+    "name": "Емва",
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 641,
+    "region_id": 34,
+    "name": "Енисейск",
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 642,
+    "region_id": 25,
+    "name": "Ермолино",
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 643,
+    "region_id": 60,
+    "name": "Ершов",
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 645,
+    "region_id": 71,
+    "name": "Ефремов",
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 646,
+    "region_id": 66,
+    "name": "Железноводск",
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 649,
+    "region_id": 21,
+    "name": "Железногорск-Илимский",
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 651,
+    "region_id": 67,
+    "name": "Жердевка",
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 653,
+    "region_id": 25,
+    "name": "Жиздра",
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 654,
+    "region_id": 13,
+    "name": "Жирновск",
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 655,
+    "region_id": 25,
+    "name": "Жуков",
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 656,
+    "region_id": 10,
+    "name": "Жуковка",
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 658,
+    "region_id": 5,
+    "name": "Завитинск",
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 659,
+    "region_id": 73,
+    "name": "Заводоуковск",
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 660,
+    "region_id": 19,
+    "name": "Заволжск",
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 661,
+    "region_id": 46,
+    "name": "Заволжье",
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 662,
+    "region_id": 38,
+    "name": "Задонск",
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 663,
+    "region_id": 68,
+    "name": "Заинск",
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 664,
+    "region_id": 11,
+    "name": "Закаменск",
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 665,
+    "region_id": 34,
+    "name": "Заозёрный",
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 666,
+    "region_id": 44,
+    "name": "Заозёрск",
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 667,
+    "region_id": 69,
+    "name": "Западная Двина",
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 668,
+    "region_id": 44,
+    "name": "Заполярный",
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 671,
+    "region_id": 63,
+    "name": "Заречный (Свердловская область)",
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 673,
+    "region_id": 40,
+    "name": "Звенигово",
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 674,
+    "region_id": 43,
+    "name": "Звенигород",
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 675,
+    "region_id": 56,
+    "name": "Зверево",
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 677,
+    "region_id": 23,
+    "name": "Зеленоградск",
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 679,
+    "region_id": 66,
+    "name": "Зеленокумск",
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 680,
+    "region_id": 56,
+    "name": "Зерноград",
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 681,
+    "region_id": 5,
+    "name": "Зея",
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 682,
+    "region_id": 21,
+    "name": "Зима",
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 684,
+    "region_id": 10,
+    "name": "Злынка",
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 685,
+    "region_id": 4,
+    "name": "Змеиногорск",
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 687,
+    "region_id": 69,
+    "name": "Зубцов",
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 688,
+    "region_id": 30,
+    "name": "Зуевка",
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 692,
+    "region_id": 63,
+    "name": "Ивдель",
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 693,
+    "region_id": 34,
+    "name": "Игарка",
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 695,
+    "region_id": 16,
+    "name": "Избербаш",
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 696,
+    "region_id": 66,
+    "name": "Изобильный",
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 697,
+    "region_id": 34,
+    "name": "Иланский",
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 698,
+    "region_id": 75,
+    "name": "Инза",
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 699,
+    "region_id": 41,
+    "name": "Инсар",
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 700,
+    "region_id": 31,
+    "name": "Инта",
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 701,
+    "region_id": 66,
+    "name": "Ипатово",
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 702,
+    "region_id": 63,
+    "name": "Ирбит",
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 704,
+    "region_id": 49,
+    "name": "Исилькуль",
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 705,
+    "region_id": 48,
+    "name": "Искитим",
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 707,
+    "region_id": 73,
+    "name": "Ишим",
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 708,
+    "region_id": 8,
+    "name": "Ишимбай",
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 710,
+    "region_id": 14,
+    "name": "Кадников",
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 712,
+    "region_id": 15,
+    "name": "Калач",
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 714,
+    "region_id": 49,
+    "name": "Калачинск",
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 716,
+    "region_id": 60,
+    "name": "Калининск",
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 717,
+    "region_id": 29,
+    "name": "Калтан",
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 719,
+    "region_id": 69,
+    "name": "Калязин",
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 720,
+    "region_id": 74,
+    "name": "Камбарка",
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 722,
+    "region_id": 37,
+    "name": "Каменногорск",
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 725,
+    "region_id": 4,
+    "name": "Камень-на-Оби",
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 726,
+    "region_id": 12,
+    "name": "Камешково",
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 727,
+    "region_id": 7,
+    "name": "Камызяк",
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 729,
+    "region_id": 63,
+    "name": "Камышлов",
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 730,
+    "region_id": 81,
+    "name": "Канаш",
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 731,
+    "region_id": 44,
+    "name": "Кандалакша",
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 733,
+    "region_id": 12,
+    "name": "Карабаново",
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 734,
+    "region_id": 79,
+    "name": "Карабаш",
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 735,
+    "region_id": 20,
+    "name": "Карабулак",
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 736,
+    "region_id": 48,
+    "name": "Карасук",
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 737,
+    "region_id": 27,
+    "name": "Карачаевск",
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 738,
+    "region_id": 10,
+    "name": "Карачев",
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 739,
+    "region_id": 48,
+    "name": "Каргат",
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 740,
+    "region_id": 6,
+    "name": "Каргополь",
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 741,
+    "region_id": 63,
+    "name": "Карпинск",
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 742,
+    "region_id": 79,
+    "name": "Карталы",
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 744,
+    "region_id": 79,
+    "name": "Касли",
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 745,
+    "region_id": 16,
+    "name": "Каспийск",
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 746,
+    "region_id": 79,
+    "name": "Катав-Ивановск",
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 747,
+    "region_id": 35,
+    "name": "Катайск",
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 748,
+    "region_id": 63,
+    "name": "Качканар",
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 749,
+    "region_id": 69,
+    "name": "Кашин",
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 751,
+    "region_id": 70,
+    "name": "Кедровый",
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 753,
+    "region_id": 28,
+    "name": "Кемь",
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 754,
+    "region_id": 53,
+    "name": "Кизел",
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 755,
+    "region_id": 16,
+    "name": "Кизилюрт",
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 756,
+    "region_id": 16,
+    "name": "Кизляр",
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 757,
+    "region_id": 71,
+    "name": "Кимовск",
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 758,
+    "region_id": 69,
+    "name": "Кимры",
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 760,
+    "region_id": 58,
+    "name": "Кинель",
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 762,
+    "region_id": 71,
+    "name": "Киреевск",
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 763,
+    "region_id": 21,
+    "name": "Киренск",
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 765,
+    "region_id": 14,
+    "name": "Кириллов",
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 768,
+    "region_id": 25,
+    "name": "Киров (Калужская область)",
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 769,
+    "region_id": 63,
+    "name": "Кировград",
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 772,
+    "region_id": 44,
+    "name": "Кировск (Мурманская область)",
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 773,
+    "region_id": 30,
+    "name": "Кирс",
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 774,
+    "region_id": 67,
+    "name": "Кирсанов",
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 780,
+    "region_id": 46,
+    "name": "Княгинино",
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 781,
+    "region_id": 44,
+    "name": "Ковдор",
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 783,
+    "region_id": 41,
+    "name": "Ковылкино",
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 784,
+    "region_id": 78,
+    "name": "Когалым",
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 785,
+    "region_id": 34,
+    "name": "Кодинск",
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 786,
+    "region_id": 25,
+    "name": "Козельск",
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 787,
+    "region_id": 81,
+    "name": "Козловка",
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 788,
+    "region_id": 40,
+    "name": "Козьмодемьянск",
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 789,
+    "region_id": 44,
+    "name": "Кола",
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 790,
+    "region_id": 32,
+    "name": "Кологрив",
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 792,
+    "region_id": 70,
+    "name": "Колпашево",
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 793,
+    "region_id": 12,
+    "name": "Кольчугино",
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 795,
+    "region_id": 19,
+    "name": "Комсомольск",
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 797,
+    "region_id": 69,
+    "name": "Конаково",
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 799,
+    "region_id": 25,
+    "name": "Кондрово",
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 800,
+    "region_id": 56,
+    "name": "Константиновск",
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 802,
+    "region_id": 57,
+    "name": "Кораблино",
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 803,
+    "region_id": 33,
+    "name": "Кореновск",
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 804,
+    "region_id": 79,
+    "name": "Коркино",
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 806,
+    "region_id": 9,
+    "name": "Короча",
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 807,
+    "region_id": 62,
+    "name": "Корсаков",
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 808,
+    "region_id": 6,
+    "name": "Коряжма",
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 809,
+    "region_id": 12,
+    "name": "Костерёво",
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 810,
+    "region_id": 28,
+    "name": "Костомукша",
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 813,
+    "region_id": 13,
+    "name": "Котельниково",
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 814,
+    "region_id": 30,
+    "name": "Котельнич",
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 816,
+    "region_id": 13,
+    "name": "Котово",
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 817,
+    "region_id": 67,
+    "name": "Котовск",
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 818,
+    "region_id": 19,
+    "name": "Кохма",
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 819,
+    "region_id": 14,
+    "name": "Красавино",
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 821,
+    "region_id": 60,
+    "name": "Красноармейск (Саратовская область)",
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 822,
+    "region_id": 53,
+    "name": "Красновишерск",
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 825,
+    "region_id": 43,
+    "name": "Краснозаводск",
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 830,
+    "region_id": 13,
+    "name": "Краснослободск (Волгоградская область)\r\n",
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 831,
+    "region_id": 41,
+    "name": "Краснослободск (Мордовия)",
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 833,
+    "region_id": 63,
+    "name": "Красноуральск",
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 834,
+    "region_id": 63,
+    "name": "Красноуфимск",
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 836,
+    "region_id": 60,
+    "name": "Красный Кут",
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 837,
+    "region_id": 56,
+    "name": "Красный Сулин",
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 838,
+    "region_id": 69,
+    "name": "Красный Холм",
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 839,
+    "region_id": 25,
+    "name": "Кремёнки",
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 841,
+    "region_id": 33,
+    "name": "Крымск",
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 844,
+    "region_id": 50,
+    "name": "Кувандык",
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 845,
+    "region_id": 69,
+    "name": "Кувшиново",
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 846,
+    "region_id": 53,
+    "name": "Кудымкар",
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 849,
+    "region_id": 46,
+    "name": "Кулебаки",
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 850,
+    "region_id": 8,
+    "name": "Кумертау",
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 852,
+    "region_id": 48,
+    "name": "Купино",
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 854,
+    "region_id": 33,
+    "name": "Курганинск",
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 855,
+    "region_id": 62,
+    "name": "Курильск",
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 856,
+    "region_id": 12,
+    "name": "Курлово",
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 857,
+    "region_id": 43,
+    "name": "Куровское",
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 859,
+    "region_id": 35,
+    "name": "Куртамыш",
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 861,
+    "region_id": 79,
+    "name": "Куса",
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 862,
+    "region_id": 63,
+    "name": "Кушва",
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 864,
+    "region_id": 79,
+    "name": "Кыштым",
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 865,
+    "region_id": 11,
+    "name": "Кяхта",
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 866,
+    "region_id": 33,
+    "name": "Лабинск",
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 867,
+    "region_id": 83,
+    "name": "Лабытнанги",
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 868,
+    "region_id": 24,
+    "name": "Лагань",
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 869,
+    "region_id": 23,
+    "name": "Ладушкин",
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 870,
+    "region_id": 68,
+    "name": "Лаишево",
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 871,
+    "region_id": 12,
+    "name": "Лакинск",
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 872,
+    "region_id": 78,
+    "name": "Лангепас",
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 873,
+    "region_id": 28,
+    "name": "Лахденпохья",
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 874,
+    "region_id": 38,
+    "name": "Лебедянь",
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 875,
+    "region_id": 68,
+    "name": "Лениногорск",
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 876,
+    "region_id": 13,
+    "name": "Ленинск",
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 878,
+    "region_id": 61,
+    "name": "Ленск",
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 879,
+    "region_id": 66,
+    "name": "Лермонтов",
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 880,
+    "region_id": 63,
+    "name": "Лесной",
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 881,
+    "region_id": 54,
+    "name": "Лесозаводск",
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 882,
+    "region_id": 34,
+    "name": "Лесосибирск",
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 886,
+    "region_id": 71,
+    "name": "Липки",
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 888,
+    "region_id": 69,
+    "name": "Лихославль",
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 893,
+    "region_id": 30,
+    "name": "Луза",
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 894,
+    "region_id": 46,
+    "name": "Лукоянов",
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 896,
+    "region_id": 46,
+    "name": "Лысково",
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 899,
+    "region_id": 36,
+    "name": "Льгов",
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 900,
+    "region_id": 37,
+    "name": "Любань",
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 902,
+    "region_id": 84,
+    "name": "Любим",
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 903,
+    "region_id": 25,
+    "name": "Людиново",
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 904,
+    "region_id": 78,
+    "name": "Лянтор",
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 906,
+    "region_id": 20,
+    "name": "Магас",
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 909,
+    "region_id": 22,
+    "name": "Майский",
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 910,
+    "region_id": 62,
+    "name": "Макаров",
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 911,
+    "region_id": 32,
+    "name": "Макарьев",
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 912,
+    "region_id": 35,
+    "name": "Макушино",
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 913,
+    "region_id": 47,
+    "name": "Малая Вишера",
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 914,
+    "region_id": 20,
+    "name": "Малгобек",
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 915,
+    "region_id": 30,
+    "name": "Малмыж",
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 916,
+    "region_id": 51,
+    "name": "Малоархангельск",
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 917,
+    "region_id": 25,
+    "name": "Малоярославец",
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 918,
+    "region_id": 68,
+    "name": "Мамадыш",
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 919,
+    "region_id": 23,
+    "name": "Мамоново",
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 920,
+    "region_id": 32,
+    "name": "Мантурово",
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 921,
+    "region_id": 29,
+    "name": "Мариинск",
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 922,
+    "region_id": 81,
+    "name": "Мариинский Посад",
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 923,
+    "region_id": 60,
+    "name": "Маркс",
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 925,
+    "region_id": 10,
+    "name": "Мглин",
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 926,
+    "region_id": 78,
+    "name": "Мегион",
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 927,
+    "region_id": 28,
+    "name": "Медвежьегорск",
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 928,
+    "region_id": 50,
+    "name": "Медногорск",
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 929,
+    "region_id": 25,
+    "name": "Медынь",
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 930,
+    "region_id": 8,
+    "name": "Межгорье",
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 932,
+    "region_id": 6,
+    "name": "Мезень",
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 933,
+    "region_id": 12,
+    "name": "Меленки",
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 934,
+    "region_id": 8,
+    "name": "Мелеуз",
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 935,
+    "region_id": 68,
+    "name": "Менделеевск",
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 936,
+    "region_id": 68,
+    "name": "Мензелинск",
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 937,
+    "region_id": 25,
+    "name": "Мещовск",
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 939,
+    "region_id": 31,
+    "name": "Микунь",
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 940,
+    "region_id": 56,
+    "name": "Миллерово",
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 942,
+    "region_id": 34,
+    "name": "Минусинск",
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 943,
+    "region_id": 79,
+    "name": "Миньяр",
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 946,
+    "region_id": 57,
+    "name": "Михайлов",
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 947,
+    "region_id": 13,
+    "name": "Михайловка",
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 948,
+    "region_id": 63,
+    "name": "Михайловск (Свердловская область)",
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 949,
+    "region_id": 66,
+    "name": "Михайловск (Ставропольский край)",
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 951,
+    "region_id": 18,
+    "name": "Могоча",
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 953,
+    "region_id": 74,
+    "name": "Можга",
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 955,
+    "region_id": 44,
+    "name": "Мончегорск",
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 956,
+    "region_id": 56,
+    "name": "Морозовск",
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 957,
+    "region_id": 67,
+    "name": "Моршанск",
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 958,
+    "region_id": 25,
+    "name": "Мосальск",
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 960,
+    "region_id": 83,
+    "name": "Муравленко",
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 961,
+    "region_id": 30,
+    "name": "Мураши",
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 965,
+    "region_id": 29,
+    "name": "Мыски",
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 967,
+    "region_id": 84,
+    "name": "Мышкин",
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 969,
+    "region_id": 46,
+    "name": "Навашино",
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 970,
+    "region_id": 19,
+    "name": "Наволоки",
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 971,
+    "region_id": 83,
+    "name": "Надым",
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 972,
+    "region_id": 34,
+    "name": "Назарово",
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 974,
+    "region_id": 49,
+    "name": "Называевск",
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 976,
+    "region_id": 7,
+    "name": "Нариманов",
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 978,
+    "region_id": 22,
+    "name": "Нарткала",
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 981,
+    "region_id": 55,
+    "name": "Невель",
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 982,
+    "region_id": 62,
+    "name": "Невельск",
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 983,
+    "region_id": 66,
+    "name": "Невинномысск",
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 984,
+    "region_id": 63,
+    "name": "Невьянск",
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 985,
+    "region_id": 69,
+    "name": "Нелидово",
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 986,
+    "region_id": 23,
+    "name": "Неман",
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 987,
+    "region_id": 32,
+    "name": "Нерехта",
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 988,
+    "region_id": 18,
+    "name": "Нерчинск",
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 990,
+    "region_id": 23,
+    "name": "Нестеров",
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 991,
+    "region_id": 58,
+    "name": "Нефтегорск",
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 993,
+    "region_id": 66,
+    "name": "Нефтекумск",
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 995,
+    "region_id": 32,
+    "name": "Нея",
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 998,
+    "region_id": 21,
+    "name": "Нижнеудинск",
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 999,
+    "region_id": 63,
+    "name": "Нижние Серги",
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 1000,
+    "region_id": 52,
+    "name": "Нижний Ломов",
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 1003,
+    "region_id": 63,
+    "name": "Нижняя Салда",
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 1004,
+    "region_id": 63,
+    "name": "Нижняя Тура",
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 1005,
+    "region_id": 13,
+    "name": "Николаевск",
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 1006,
+    "region_id": 76,
+    "name": "Николаевск-на-Амуре",
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 1007,
+    "region_id": 14,
+    "name": "Никольск (Вологодская область)",
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 1008,
+    "region_id": 52,
+    "name": "Никольск (Пензенская область)",
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 1010,
+    "region_id": 37,
+    "name": "Новая Ладога",
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 1011,
+    "region_id": 63,
+    "name": "Новая Ляля",
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 1012,
+    "region_id": 66,
+    "name": "Новоалександровск",
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 1014,
+    "region_id": 13,
+    "name": "Новоаннинский",
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 1015,
+    "region_id": 15,
+    "name": "Нововоронеж",
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 1016,
+    "region_id": 6,
+    "name": "Новодвинск",
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 1017,
+    "region_id": 10,
+    "name": "Новозыбков",
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 1018,
+    "region_id": 33,
+    "name": "Новокубанск",
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 1021,
+    "region_id": 57,
+    "name": "Новомичуринск",
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 1023,
+    "region_id": 66,
+    "name": "Новопавловск",
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 1024,
+    "region_id": 55,
+    "name": "Новоржев",
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 1027,
+    "region_id": 51,
+    "name": "Новосиль",
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 1028,
+    "region_id": 55,
+    "name": "Новосокольники",
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 1030,
+    "region_id": 60,
+    "name": "Новоузенск",
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 1031,
+    "region_id": 75,
+    "name": "Новоульяновск",
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 1033,
+    "region_id": 15,
+    "name": "Новохопёрск",
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 1040,
+    "region_id": 30,
+    "name": "Нолинск",
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 1043,
+    "region_id": 68,
+    "name": "Нурлат",
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 1044,
+    "region_id": 53,
+    "name": "Нытва",
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 1045,
+    "region_id": 61,
+    "name": "Нюрба",
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 1046,
+    "region_id": 78,
+    "name": "Нягань",
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 1047,
+    "region_id": 79,
+    "name": "Нязепетровск",
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 1048,
+    "region_id": 6,
+    "name": "Няндома",
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 1049,
+    "region_id": 17,
+    "name": "Облучье",
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 1051,
+    "region_id": 36,
+    "name": "Обоянь",
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 1052,
+    "region_id": 48,
+    "name": "Обь",
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 1054,
+    "region_id": 43,
+    "name": "Ожерелье",
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 1058,
+    "region_id": 58,
+    "name": "Октябрьск",
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 1060,
+    "region_id": 47,
+    "name": "Окуловка",
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 1061,
+    "region_id": 61,
+    "name": "Олёкминск",
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 1062,
+    "region_id": 44,
+    "name": "Оленегорск",
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 1063,
+    "region_id": 28,
+    "name": "Олонец",
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 1065,
+    "region_id": 30,
+    "name": "Омутнинск",
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 1066,
+    "region_id": 6,
+    "name": "Онега",
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 1067,
+    "region_id": 55,
+    "name": "Опочка",
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 1071,
+    "region_id": 30,
+    "name": "Орлов",
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 1073,
+    "region_id": 53,
+    "name": "Оса",
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 1074,
+    "region_id": 29,
+    "name": "Осинники",
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 1075,
+    "region_id": 69,
+    "name": "Осташков",
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 1076,
+    "region_id": 55,
+    "name": "Остров",
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 1077,
+    "region_id": 44,
+    "name": "Островной",
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 1078,
+    "region_id": 15,
+    "name": "Острогожск",
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 1080,
+    "region_id": 58,
+    "name": "Отрадный",
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 1081,
+    "region_id": 62,
+    "name": "Оха",
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 1082,
+    "region_id": 53,
+    "name": "Оханск",
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 1083,
+    "region_id": 53,
+    "name": "Очёр",
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 1087,
+    "region_id": 13,
+    "name": "Палласовка",
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 1088,
+    "region_id": 54,
+    "name": "Партизанск",
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 1089,
+    "region_id": 82,
+    "name": "Певек",
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 1091,
+    "region_id": 46,
+    "name": "Первомайск",
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 1093,
+    "region_id": 46,
+    "name": "Перевоз",
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 1094,
+    "region_id": 43,
+    "name": "Пересвет",
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 1097,
+    "region_id": 47,
+    "name": "Пестово",
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 1098,
+    "region_id": 13,
+    "name": "Петров Вал",
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 1099,
+    "region_id": 60,
+    "name": "Петровск",
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 1100,
+    "region_id": 18,
+    "name": "Петровск-Забайкальский",
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 1103,
+    "region_id": 35,
+    "name": "Петухово",
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 1104,
+    "region_id": 12,
+    "name": "Петушки",
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 1106,
+    "region_id": 55,
+    "name": "Печоры",
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 1108,
+    "region_id": 23,
+    "name": "Пионерский",
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 1109,
+    "region_id": 28,
+    "name": "Питкяранта",
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 1110,
+    "region_id": 19,
+    "name": "Плёс",
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 1111,
+    "region_id": 71,
+    "name": "Плавск",
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 1112,
+    "region_id": 79,
+    "name": "Пласт",
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 1113,
+    "region_id": 15,
+    "name": "Поворино",
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 1116,
+    "region_id": 78,
+    "name": "Покачи",
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 1117,
+    "region_id": 12,
+    "name": "Покров",
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 1118,
+    "region_id": 61,
+    "name": "Покровск",
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 1120,
+    "region_id": 23,
+    "name": "Полесск",
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 1121,
+    "region_id": 29,
+    "name": "Полысаево",
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 1122,
+    "region_id": 44,
+    "name": "Полярные Зори",
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 1123,
+    "region_id": 44,
+    "name": "Полярный",
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 1124,
+    "region_id": 62,
+    "name": "Поронайск",
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 1125,
+    "region_id": 55,
+    "name": "Порхов",
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 1126,
+    "region_id": 58,
+    "name": "Похвистнево",
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 1127,
+    "region_id": 10,
+    "name": "Почеп",
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 1128,
+    "region_id": 65,
+    "name": "Починок",
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 1129,
+    "region_id": 84,
+    "name": "Пошехонье",
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 1130,
+    "region_id": 23,
+    "name": "Правдинск",
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 1131,
+    "region_id": 19,
+    "name": "Приволжск",
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 1132,
+    "region_id": 23,
+    "name": "Приморск (Калининградская область)",
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 1133,
+    "region_id": 37,
+    "name": "Приморск (Ленинградская область)",
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 1134,
+    "region_id": 33,
+    "name": "Приморско-Ахтарск",
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 1137,
+    "region_id": 56,
+    "name": "Пролетарск",
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 1141,
+    "region_id": 60,
+    "name": "Пугачёв",
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 1142,
+    "region_id": 28,
+    "name": "Пудож",
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 1143,
+    "region_id": 55,
+    "name": "Пустошка",
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 1144,
+    "region_id": 19,
+    "name": "Пучеж",
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 1147,
+    "region_id": 55,
+    "name": "Пыталово",
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 1148,
+    "region_id": 78,
+    "name": "Пыть-Ях",
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 1150,
+    "region_id": 12,
+    "name": "Радужный (Владимирская область)",
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 1151,
+    "region_id": 78,
+    "name": "Радужный (Ханты-Мансийский АО - Югра)",
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 1152,
+    "region_id": 5,
+    "name": "Райчихинск",
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 1154,
+    "region_id": 67,
+    "name": "Рассказово",
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 1156,
+    "region_id": 63,
+    "name": "Реж",
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 1159,
+    "region_id": 19,
+    "name": "Родники",
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 1160,
+    "region_id": 65,
+    "name": "Рославль",
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 1162,
+    "region_id": 84,
+    "name": "Ростов",
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 1165,
+    "region_id": 60,
+    "name": "Ртищево",
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 1167,
+    "region_id": 65,
+    "name": "Рудня",
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 1168,
+    "region_id": 43,
+    "name": "Руза",
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 1171,
+    "region_id": 57,
+    "name": "Рыбное",
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 1172,
+    "region_id": 36,
+    "name": "Рыльск",
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 1173,
+    "region_id": 57,
+    "name": "Ряжск",
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 1176,
+    "region_id": 29,
+    "name": "Салаир",
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 1177,
+    "region_id": 83,
+    "name": "Салехард",
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 1185,
+    "region_id": 57,
+    "name": "Сасово",
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 1187,
+    "region_id": 65,
+    "name": "Сафоново",
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 1188,
+    "region_id": 77,
+    "name": "Саяногорск",
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 1189,
+    "region_id": 21,
+    "name": "Саянск",
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 1190,
+    "region_id": 23,
+    "name": "Светлогорск",
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 1191,
+    "region_id": 66,
+    "name": "Светлоград",
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 1192,
+    "region_id": 23,
+    "name": "Светлый",
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 1194,
+    "region_id": 21,
+    "name": "Свирск",
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 1196,
+    "region_id": 55,
+    "name": "Себеж",
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 1197,
+    "region_id": 62,
+    "name": "Северо-Курильск",
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 1201,
+    "region_id": 63,
+    "name": "Североуральск",
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 1203,
+    "region_id": 10,
+    "name": "Севск",
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 1204,
+    "region_id": 28,
+    "name": "Сегежа",
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 1205,
+    "region_id": 10,
+    "name": "Сельцо",
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 1206,
+    "region_id": 46,
+    "name": "Семёнов",
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 1207,
+    "region_id": 56,
+    "name": "Семикаракорск",
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 1208,
+    "region_id": 15,
+    "name": "Семилуки",
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 1209,
+    "region_id": 75,
+    "name": "Сенгилей",
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 1210,
+    "region_id": 13,
+    "name": "Серафимович",
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 1211,
+    "region_id": 46,
+    "name": "Сергач",
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 1213,
+    "region_id": 52,
+    "name": "Сердобск",
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 1217,
+    "region_id": 8,
+    "name": "Сибай",
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 1218,
+    "region_id": 79,
+    "name": "Сим",
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 1219,
+    "region_id": 5,
+    "name": "Сковородино",
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 1220,
+    "region_id": 57,
+    "name": "Скопин",
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 1221,
+    "region_id": 4,
+    "name": "Славгород",
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 1222,
+    "region_id": 23,
+    "name": "Славск",
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 1223,
+    "region_id": 33,
+    "name": "Славянск-на-Кубани",
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 1225,
+    "region_id": 30,
+    "name": "Слободской",
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 1226,
+    "region_id": 21,
+    "name": "Слюдянка",
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 1229,
+    "region_id": 44,
+    "name": "Снежногорск",
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 1230,
+    "region_id": 12,
+    "name": "Собинка",
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 1232,
+    "region_id": 30,
+    "name": "Советск (Кировская область)",
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 1233,
+    "region_id": 71,
+    "name": "Советск (Тульская область)",
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 1234,
+    "region_id": 76,
+    "name": "Советская Гавань",
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 1235,
+    "region_id": 78,
+    "name": "Советский",
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 1237,
+    "region_id": 32,
+    "name": "Солигалич",
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 1240,
+    "region_id": 50,
+    "name": "Соль-Илецк",
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 1241,
+    "region_id": 6,
+    "name": "Сольвычегодск",
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 1242,
+    "region_id": 47,
+    "name": "Сольцы",
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 1243,
+    "region_id": 50,
+    "name": "Сорочинск",
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 1244,
+    "region_id": 77,
+    "name": "Сорск",
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 1245,
+    "region_id": 28,
+    "name": "Сортавала",
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 1246,
+    "region_id": 25,
+    "name": "Сосенский",
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 1247,
+    "region_id": 30,
+    "name": "Сосновка",
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 1248,
+    "region_id": 34,
+    "name": "Сосновоборск",
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 1250,
+    "region_id": 31,
+    "name": "Сосногорск",
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 1252,
+    "region_id": 25,
+    "name": "Спас-Деменск",
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 1253,
+    "region_id": 57,
+    "name": "Спас-Клепики",
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 1254,
+    "region_id": 52,
+    "name": "Спасск",
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 1255,
+    "region_id": 54,
+    "name": "Спасск-Дальний",
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 1256,
+    "region_id": 57,
+    "name": "Спасск-Рязанский",
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 1257,
+    "region_id": 61,
+    "name": "Среднеколымск",
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 1258,
+    "region_id": 63,
+    "name": "Среднеуральск",
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 1259,
+    "region_id": 18,
+    "name": "Сретенск",
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 1263,
+    "region_id": 69,
+    "name": "Старица",
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 1264,
+    "region_id": 10,
+    "name": "Стародуб",
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 1267,
+    "region_id": 70,
+    "name": "Стрежевой",
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 1268,
+    "region_id": 9,
+    "name": "Строитель",
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 1269,
+    "region_id": 12,
+    "name": "Струнино",
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 1271,
+    "region_id": 71,
+    "name": "Суворов",
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 1272,
+    "region_id": 36,
+    "name": "Суджа",
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 1273,
+    "region_id": 12,
+    "name": "Судогда",
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 1274,
+    "region_id": 12,
+    "name": "Суздаль",
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 1275,
+    "region_id": 28,
+    "name": "Суоярви",
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 1276,
+    "region_id": 10,
+    "name": "Сураж",
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 1278,
+    "region_id": 13,
+    "name": "Суровикино",
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 1279,
+    "region_id": 52,
+    "name": "Сурск",
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 1280,
+    "region_id": 39,
+    "name": "Сусуман",
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 1281,
+    "region_id": 25,
+    "name": "Сухиничи",
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 1282,
+    "region_id": 63,
+    "name": "Сухой Лог",
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 1285,
+    "region_id": 63,
+    "name": "Сысерть",
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 1286,
+    "region_id": 65,
+    "name": "Сычёвка",
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 1288,
+    "region_id": 63,
+    "name": "Тавда",
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 1290,
+    "region_id": 29,
+    "name": "Тайга",
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 1291,
+    "region_id": 21,
+    "name": "Тайшет",
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 1292,
+    "region_id": 43,
+    "name": "Талдом",
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 1293,
+    "region_id": 63,
+    "name": "Талица",
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 1295,
+    "region_id": 49,
+    "name": "Тара",
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 1296,
+    "region_id": 83,
+    "name": "Тарко-Сале",
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 1297,
+    "region_id": 25,
+    "name": "Таруса",
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 1298,
+    "region_id": 48,
+    "name": "Татарск",
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 1299,
+    "region_id": 29,
+    "name": "Таштагол",
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 1301,
+    "region_id": 27,
+    "name": "Теберда",
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 1302,
+    "region_id": 19,
+    "name": "Тейково",
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 1303,
+    "region_id": 41,
+    "name": "Темников",
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 1304,
+    "region_id": 33,
+    "name": "Темрюк",
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 1305,
+    "region_id": 22,
+    "name": "Терек",
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 1306,
+    "region_id": 68,
+    "name": "Тетюши",
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 1307,
+    "region_id": 33,
+    "name": "Тимашевск",
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 1311,
+    "region_id": 48,
+    "name": "Тогучин",
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 1313,
+    "region_id": 62,
+    "name": "Томари",
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 1314,
+    "region_id": 61,
+    "name": "Томмот",
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 1316,
+    "region_id": 29,
+    "name": "Топки",
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 1317,
+    "region_id": 69,
+    "name": "Торжок",
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 1318,
+    "region_id": 69,
+    "name": "Торопец",
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 1320,
+    "region_id": 14,
+    "name": "Тотьма",
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 1321,
+    "region_id": 79,
+    "name": "Трёхгорный",
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 1323,
+    "region_id": 10,
+    "name": "Трубчевск",
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 1325,
+    "region_id": 8,
+    "name": "Туймазы",
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 1327,
+    "region_id": 21,
+    "name": "Тулун",
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 1328,
+    "region_id": 72,
+    "name": "Туран",
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 1329,
+    "region_id": 63,
+    "name": "Туринск",
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 1330,
+    "region_id": 84,
+    "name": "Тутаев",
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 1331,
+    "region_id": 5,
+    "name": "Тында",
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 1332,
+    "region_id": 22,
+    "name": "Тырныауз",
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 1333,
+    "region_id": 49,
+    "name": "Тюкалинск",
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 1335,
+    "region_id": 67,
+    "name": "Уварово",
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 1336,
+    "region_id": 62,
+    "name": "Углегорск",
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 1337,
+    "region_id": 84,
+    "name": "Углич",
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 1338,
+    "region_id": 61,
+    "name": "Удачный",
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 1339,
+    "region_id": 69,
+    "name": "Удомля",
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 1340,
+    "region_id": 34,
+    "name": "Ужур",
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 1344,
+    "region_id": 10,
+    "name": "Унеча",
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 1345,
+    "region_id": 78,
+    "name": "Урай",
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 1346,
+    "region_id": 46,
+    "name": "Урень",
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 1347,
+    "region_id": 30,
+    "name": "Уржум",
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 1349,
+    "region_id": 13,
+    "name": "Урюпинск",
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 1350,
+    "region_id": 31,
+    "name": "Усинск",
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 1351,
+    "region_id": 38,
+    "name": "Усмань",
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 1352,
+    "region_id": 53,
+    "name": "Усолье",
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 1353,
+    "region_id": 21,
+    "name": "Усолье-Сибирское",
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 1355,
+    "region_id": 27,
+    "name": "Усть-Джегута",
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 1357,
+    "region_id": 79,
+    "name": "Усть-Катав",
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 1358,
+    "region_id": 21,
+    "name": "Усть-Кут",
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 1359,
+    "region_id": 33,
+    "name": "Усть-Лабинск",
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 1360,
+    "region_id": 14,
+    "name": "Устюжна",
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 1363,
+    "region_id": 8,
+    "name": "Учалы",
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 1364,
+    "region_id": 34,
+    "name": "Уяр",
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 1365,
+    "region_id": 36,
+    "name": "Фатеж",
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 1366,
+    "region_id": 10,
+    "name": "Фокино (Брянская область)",
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 1367,
+    "region_id": 54,
+    "name": "Фокино (Приморский край)\n",
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 1368,
+    "region_id": 13,
+    "name": "Фролово",
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 1370,
+    "region_id": 19,
+    "name": "Фурманов",
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 1372,
+    "region_id": 33,
+    "name": "Хадыженск",
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 1374,
+    "region_id": 7,
+    "name": "Харабали",
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 1375,
+    "region_id": 14,
+    "name": "Харовск",
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 1377,
+    "region_id": 60,
+    "name": "Хвалынск",
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 1378,
+    "region_id": 18,
+    "name": "Хилок",
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 1380,
+    "region_id": 47,
+    "name": "Холм",
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 1381,
+    "region_id": 62,
+    "name": "Холмск",
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 1382,
+    "region_id": 43,
+    "name": "Хотьково",
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 1383,
+    "region_id": 81,
+    "name": "Цивильск",
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 1384,
+    "region_id": 56,
+    "name": "Цимлянск",
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 1385,
+    "region_id": 53,
+    "name": "Чёрмоз",
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 1386,
+    "region_id": 72,
+    "name": "Чадан",
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 1389,
+    "region_id": 38,
+    "name": "Чаплыгин",
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 1390,
+    "region_id": 79,
+    "name": "Чебаркуль",
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 1392,
+    "region_id": 22,
+    "name": "Чегем",
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 1393,
+    "region_id": 71,
+    "name": "Чекалин",
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 1395,
+    "region_id": 53,
+    "name": "Чердынь",
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 1396,
+    "region_id": 21,
+    "name": "Черемхово",
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 1397,
+    "region_id": 48,
+    "name": "Черепаново",
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 1402,
+    "region_id": 53,
+    "name": "Чернушка",
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 1403,
+    "region_id": 23,
+    "name": "Черняховск",
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 1405,
+    "region_id": 68,
+    "name": "Чистополь",
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 1407,
+    "region_id": 46,
+    "name": "Чкаловск",
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 1408,
+    "region_id": 47,
+    "name": "Чудово",
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 1409,
+    "region_id": 48,
+    "name": "Чулым",
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 1410,
+    "region_id": 53,
+    "name": "Чусовой",
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 1411,
+    "region_id": 32,
+    "name": "Чухлома",
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 1412,
+    "region_id": 72,
+    "name": "Шагонар",
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 1414,
+    "region_id": 80,
+    "name": "Шали",
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 1415,
+    "region_id": 34,
+    "name": "Шарыпово",
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 1416,
+    "region_id": 32,
+    "name": "Шарья",
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 1418,
+    "region_id": 62,
+    "name": "Шахтёрск",
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 1420,
+    "region_id": 46,
+    "name": "Шахунья",
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 1421,
+    "region_id": 57,
+    "name": "Шацк",
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 1423,
+    "region_id": 21,
+    "name": "Шелехов",
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 1424,
+    "region_id": 6,
+    "name": "Шенкурск",
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 1425,
+    "region_id": 18,
+    "name": "Шилка",
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 1426,
+    "region_id": 5,
+    "name": "Шимановск",
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 1427,
+    "region_id": 60,
+    "name": "Шиханы",
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 1429,
+    "region_id": 81,
+    "name": "Шумерля",
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 1430,
+    "region_id": 35,
+    "name": "Шумиха",
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 1432,
+    "region_id": 71,
+    "name": "Щёкино",
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 1434,
+    "region_id": 36,
+    "name": "Щигры",
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 1435,
+    "region_id": 35,
+    "name": "Щучье",
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 1441,
+    "region_id": 15,
+    "name": "Эртиль",
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 1443,
+    "region_id": 78,
+    "name": "Югорск",
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 1444,
+    "region_id": 19,
+    "name": "Южа",
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 1446,
+    "region_id": 16,
+    "name": "Южно-Сухокумск",
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 1447,
+    "region_id": 79,
+    "name": "Южноуральск",
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 1449,
+    "region_id": 12,
+    "name": "Юрьев-Польский",
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 1450,
+    "region_id": 19,
+    "name": "Юрьевец",
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 1451,
+    "region_id": 79,
+    "name": "Юрюзань",
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 1452,
+    "region_id": 25,
+    "name": "Юхнов",
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 1453,
+    "region_id": 81,
+    "name": "Ядрин",
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 1455,
+    "region_id": 73,
+    "name": "Ялуторовск",
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 1456,
+    "region_id": 8,
+    "name": "Янаул",
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 1457,
+    "region_id": 30,
+    "name": "Яранск",
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 1458,
+    "region_id": 4,
+    "name": "Яровое",
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 1460,
+    "region_id": 65,
+    "name": "Ярцево",
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 1461,
+    "region_id": 71,
+    "name": "Ясногорск",
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 1462,
+    "region_id": 50,
+    "name": "Ясный",
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 1463,
+    "region_id": 43,
+    "name": "Яхрома",
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 1467,
+    "region_id": 86,
+    "name": "Алупка",
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 1468,
+    "region_id": 86,
+    "name": "Алушта",
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 1469,
+    "region_id": 86,
+    "name": "Армянск\r\n",
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 1470,
+    "region_id": 86,
+    "name": "Бахчисарай",
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 1471,
+    "region_id": 86,
+    "name": "Белогорск (Крым)",
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 1472,
+    "region_id": 86,
+    "name": "Джанкой",
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 1473,
+    "region_id": 86,
+    "name": "Евпатория",
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 1474,
+    "region_id": 87,
+    "name": "Инкерман",
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 1475,
+    "region_id": 68,
+    "name": "Иннополис",
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 1476,
+    "region_id": 86,
+    "name": "Керчь",
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 1477,
+    "region_id": 23,
+    "name": "Краснознаменск (Калининградская область)",
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 1478,
+    "region_id": 86,
+    "name": "Красноперекопск",
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 1479,
+    "region_id": 6,
+    "name": "Мирный (Архангельская область)",
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 1480,
+    "region_id": 23,
+    "name": "Озерск (Калининградская область)",
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 1481,
+    "region_id": 86,
+    "name": "Саки",
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 1482,
+    "region_id": 87,
+    "name": "Севастополь",
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 1483,
+    "region_id": 86,
+    "name": "Симферополь",
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 1484,
+    "region_id": 86,
+    "name": "Старый Крым",
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 1485,
+    "region_id": 86,
+    "name": "Судак",
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 1486,
+    "region_id": 5,
+    "name": "Циолковский",
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 1487,
+    "region_id": 86,
+    "name": "Феодосия",
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 1488,
+    "region_id": 86,
+    "name": "Щелкино",
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 1489,
+    "region_id": 86,
+    "name": "Ялта",
+    "created_at": null,
+    "updated_at": null
+  }
+]
