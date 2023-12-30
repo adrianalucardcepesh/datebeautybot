@@ -44,7 +44,7 @@ function createScenes(bot) {
 
             await ctx.reply('Выберите свой город: 🏙', keyboard);
 
-            let text = 'Чтобы быстрее найти ваш город, напишите его название снизу 👇';
+            let text = 'Чтобы быстрее найти ваш город, напишите его название снизу \n\n Или впишите первые три-четыре буквы города и нажмите enter 👇';
             await ctx.reply(text, {
                 reply_markup: {
                     keyboard: [
@@ -67,16 +67,20 @@ function createScenes(bot) {
             const userId = ctx.from.id; // Telegram ID пользователя, если он совпадает с вашим идентификатором в бд; если нет, вам может потребоваться дополнительная логика для получения идентификатора пользователя
             try {
                 await insertCityForUser(userId, selectedCity);
-                await ctx.reply(`Вы выбрали город: ${selectedCity} \n\n Теперь укажите ваш возраст: `);
+                await ctx.reply(`Вы выбрали город:  ${selectedCity}`);
+                ctx.scene.enter('age');
+
             } catch (error) {
                 // Логируем ошибку и сообщаем пользователю
                 console.error('Ошибка при вставке города в базу данных:', error);
                 await ctx.reply('Произошла ошибка при сохранении вашего выбора города.');
             }
 
+
             // Закрытие inline-клавиатуры
             await ctx.answerCbQuery();
         })
+
 
         async function insertCityForUser(userId, selectedCity) {
             let conn;
@@ -100,12 +104,14 @@ function createScenes(bot) {
                 if (conn) conn.release();
             }
         }
-    }
 
+    }
 
     cityScene.enter(async (ctx) => {
         await renderCityPage(ctx, 0); // Start page at 0
     });
+
+
 
 
 
@@ -140,12 +146,10 @@ function createScenes(bot) {
 // ...cityScene and renderCityPage code...
 
     cityScene.on('text', async (ctx) => {
-        // Use the message text as a query for searching cities
-        await searchForCity(ctx.message.text, ctx);
+        // Пытаемся найти город
+        const searchQuery = ctx.message.text; // Сохраняем введенный пользователем текст.
+        await searchForCity(searchQuery, ctx);
     });
-    // Обработчик кнопки выбора города
-
-
 
 
 // Сцена 'age'
