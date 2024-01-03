@@ -1,24 +1,15 @@
-const { Markup } = require('telegraf');
+const { Telegraf, Markup, Scenes, session } = require('telegraf');
 const bot = require('../config/config');
+const { genderCommand } = require('../keyboards/gender')
 
-const searchCommand = async (ctx, gender) => {
+const searchCommand = async (ctx) => {
     try {
-        // Затем отправляем текст от выборе пола и клавиатуру
         await ctx.reply(
-            ` Теперь выберите кого вы ищите: `,
-            {
-                reply_markup: {
-                    inline_keyboard: [
-                        [
-                            Markup.button.callback('Парня  ' + ' 👨', 'mann'),
-                            Markup.button.callback('Девушку  ' + ' 👱', 'womann'),
-                        ],
-                        [
-                            Markup.button.callback('Любой пол' + ' 👤', 'anyy'),
-                        ],
-                    ],
-                },
-            }
+            'Сначала определимся с вашим полом ⚧:',
+            Markup.inlineKeyboard([
+                [Markup.button.callback('Я парень 👨', 'mann')],
+                [Markup.button.callback('Я девушка 👱‍♀️', 'womann')]
+            ])
         );
     } catch (error) {
         console.error('Произошла ошибка:', error);
@@ -28,6 +19,7 @@ const searchCommand = async (ctx, gender) => {
 
 
 
+module.exports = {
 
-
-module.exports = { searchCommand };
+    searchCommand
+};

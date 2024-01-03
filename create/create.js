@@ -11,6 +11,50 @@ const fetch = require('node-fetch');
 
 function createScenes(bot) {
 
+
+    const nameScene = new Scenes.BaseScene('name');
+
+    nameScene.enter((ctx) => {
+        ctx.reply('Пожалуйста, введите свое имя:');
+    });
+
+    nameScene.on('text', (ctx) => {
+        if (!ctx.message.text) {
+            ctx.reply('Имя обязательно для заполнения!');
+            return;
+        }
+
+        ctx.session.name = ctx.message.text;
+
+        ctx.scene.enter('surname');
+
+    });
+    // Сцена 'surname'
+    const surnameScene = new Scenes.BaseScene('surname');
+    surnameScene.enter((ctx) => ctx.reply('Введите вашу фамилию:'));
+    surnameScene.on('text', (ctx) => {
+        ctx.session.surname = ctx.message.text;
+        ctx.scene.enter('gender');
+    });
+
+    const genderScene = new Scenes.BaseScene('gender');
+
+    genderScene.enter((ctx) => {
+        ctx.reply('Ваш пол:');
+    });
+
+    genderScene.on('text', (ctx) => {
+        if (!ctx.message.text) {
+            ctx.reply('Ваш пол обязателен для заполения!!');
+            return;
+        }
+
+        ctx.session.gender = ctx.message.text;
+
+        ctx.scene.enter('city');
+
+    });
+
     const cityScene = new Scenes.BaseScene('city');
 
     const ITEMS_PER_PAGE = 10; // Define how many items you want per page
@@ -159,7 +203,7 @@ function createScenes(bot) {
         const age = Number(ctx.message.text);
 
         if (isNaN(age)) {
-            ctx.reply('Введите возраст в виде числа');
+            ctx.reply('Введите возраст в виде числа  0️⃣1️⃣:  ');
             return;
         }
 
@@ -181,7 +225,7 @@ function createScenes(bot) {
     const infoScene = new Scenes.BaseScene('info');
 
     infoScene.enter((ctx) => {
-        ctx.reply('Напишите немного о себе:');
+        ctx.reply('Напишите немного о себе: 💮: ');
     });
 
     infoScene.on('text', (ctx) => {
@@ -197,7 +241,7 @@ function createScenes(bot) {
 
 // Сцена 'search'
     const searchScene = new Scenes.BaseScene('search');
-    searchScene.enter((ctx) => ctx.reply('Опишите кратко кого или что вы ищите: друга, партнера на вечер, отношения, делового партнера, товарища по переписке, работу, финансовую или моральную помощь и т.д'));
+    searchScene.enter((ctx) => ctx.reply('Опишите кратко кого или что вы ищите, например: \\n друга, \\п артнера на вечер, \\n отношения, \\n делового партнера, \\n товарища по переписке, \\n работу, \\n финансовую \\n или моральную помощь и т.д'));
     searchScene.on('text', (ctx) => {
         ctx.session.search = ctx.message.text;
         ctx.scene.enter('goal');
@@ -312,6 +356,9 @@ function createScenes(bot) {
     });
 
     const Stage = new Scenes.Stage([
+        nameScene,
+        surnameScene,
+        genderScene,
         cityScene,
         ageScene,
         infoScene,

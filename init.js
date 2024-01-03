@@ -32,12 +32,25 @@ bot.action(['mann', 'womann', 'anyy'], (ctx) => {
             }
         });
     }
+    bot.action('mann', (ctx) => {
+        ctx.session.genderChoice = 'mann';
+
+    });
+    bot.action('womann', (ctx) => {
+        ctx.session.genderChoice = 'womann';
+    });
+
+    bot.action('womann', (ctx) => {
+        ctx.session.genderChoice = 'any';
+
+    });
 
     bot.action('reset', (ctx) => {
         // Предполагаем, что функция startCommand(ctx) начинает процедуру заново
         startCommand(ctx);
         ctx.deleteMessage(); // Опционально: удаляем сообщение с клавиатурой
     });
+
 
     bot.action('continue', (ctx) => {
         // Пользователь выбрал продолжение, убираем клавиатуру и вызываем функцию createScenes
