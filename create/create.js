@@ -11,6 +11,104 @@ const fetch = require('node-fetch');
 
 function createScenes(bot) {
 
+    const firstQuestionScene = new Scenes.BaseScene('firstQuestion');
+
+    firstQuestionScene.enter(async (ctx) => {
+        let text = 'Что бы составить анкету. Вам нужно ответить на несколько небольших вопросов  💬  : ';
+        await ctx.reply(text, {
+            reply_markup: {
+                keyboard: [
+                    [{ text: 'Вернуться в главное меню 🆒 ' }],
+                ],
+                resize_keyboard: true,
+                one_time_keyboard: true,
+            },
+        });
+
+        await ctx.reply(
+            'Сначала определимся с вашим полом ⚧:',
+            Markup.inlineKeyboard([
+                Markup.button.callback('Я парень 👨', 'mann'),
+                Markup.button.callback('Я девушка 👱‍♀️', 'womann'),
+            ])
+        );
+    });
+
+    firstQuestionScene.action('mann', async (ctx) => {
+        await ctx.answerCbQuery();
+        await ctx.reply('Вы выбрали "Я парень"  👨');
+        ctx.scene.enter('secondQuestion');
+    });
+    firstQuestionScene.action('womann', async (ctx) => {
+        await ctx.answerCbQuery();
+        await ctx.reply('Вы выбрали "Я девушка" 👱‍♀️');
+        ctx.scene.enter('secondQuestion');
+    });
+
+// Создайте сцену для второго вопроса
+
+    const secondQuestionScene = new Scenes.BaseScene('secondQuestion');
+
+    secondQuestionScene.enter(async (ctx) => {
+        await ctx.reply("Теперь выберите кого вы ищете:  💕 ", Markup.inlineKeyboard([
+            [
+
+                                Markup.button.callback('Парня 👨', 'search_mann'),
+                                Markup.button.callback('Девушку 👱‍♀️', 'search_womann')
+                            ],
+
+                            [
+                                Markup.button.callback('Любой пол 👤', 'any')
+                            ],
+
+        ]));
+    });
+
+// Обработчик кнопки "Парня 👨"
+    secondQuestionScene.action('search_mann', async (ctx) => {
+        await ctx.answerCbQuery();
+        await ctx.reply(`Вы выбрали: Парня 👨 `);
+        ctx.scene.enter('name'); // Переход на сцену ввода имени
+    });
+
+// Обработчик кнопки "Девушку 👱‍♀️"
+    secondQuestionScene.action('search_womann', async (ctx) => {
+        await ctx.answerCbQuery();
+        await ctx.reply(`Вы выбрали: Девушку 👱‍♀ `);
+        ctx.scene.enter('name'); // Переход на сцену ввода имени
+    });
+
+// Обработчик кнопки "Любой пол 👤"
+    secondQuestionScene.action('any', async (ctx) => {
+        await ctx.answerCbQuery();
+        await ctx.reply(`Вы выбрали: Любой пол 👤 `);
+        ctx.scene.enter('name'); // Переход на сцену ввода имени
+    });
+
+
+    //
+    // const secondQuestionScene = new Scenes.BaseScene('secondQuestion');
+    // secondQuestionScene.enter(async (ctx) => {
+    //     // Получаем выбор пользователя из первого вопроса
+    //     const userChoice = ctx.session.userGender || 'не определено';
+    //     // Сообщаем об этом
+    //     await ctx.reply(`Вы выбрали: ${userChoice}`);
+    //     // Задаем второй вопрос
+    //     await ctx.reply(
+    //         'Теперь кого вы ищите:',
+    //         Markup.inlineKeyboard([
+    //             [
+    //
+    //                 Markup.button.callback('Парня 👨', 'search_mann'),
+    //                 Markup.button.callback('Девушку 👱‍♀️', 'search_womann')
+    //             ],
+    //
+    //             [
+    //                 Markup.button.callback('Любой пол 👤', 'any')
+    //             ],
+    //         ])
+    //     );
+    // });
 
     const nameScene = new Scenes.BaseScene('name');
 
@@ -25,6 +123,7 @@ function createScenes(bot) {
         }
 
         ctx.session.name = ctx.message.text;
+        ctx.scene.enter('surname');
 
         ctx.scene.enter('surname');
 
@@ -356,6 +455,8 @@ function createScenes(bot) {
     });
 
     const Stage = new Scenes.Stage([
+        firstQuestionScene,
+        secondQuestionScene,
         nameScene,
         surnameScene,
         genderScene,
@@ -370,6 +471,7 @@ function createScenes(bot) {
     bot.use(Stage.middleware());
 
     return Stage;
+
 }
 function checkUploadedFiles(ctx) {
     if (!ctx.session.uploadedFiles) {
@@ -392,5 +494,6 @@ const fileExtension = (fileId) => {
 };
 
 module.exports = {
-    createScenes
+    createScenes,
+
 };

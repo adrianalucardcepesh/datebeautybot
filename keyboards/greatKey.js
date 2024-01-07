@@ -1,7 +1,8 @@
 const { Telegraf, Markup, Scenes, session } = require('telegraf');
 const bot = require('../config/config');
-const { searchCommand } = require('./searchKey');
-// const { genderCommand } = require('./searchKey');
+
+
+
 
 
 const startCommand = async (ctx) => {
@@ -17,17 +18,17 @@ const startCommand = async (ctx) => {
         // Затем отправляем текст приветствия и клавиатуру
         await ctx.reply("Привет, друзья! 💫\n\nВас приветствует бот знакомств Hummingbird 💟\n\nЕсли Вам уже 18 лет или больше, то начинайте заполнять анкету и заводить новых друзей! 🔞\n\nВнимание! ⚠️\n\nЕсли во время просмотра анкет у вас случиться баг или бот зависнет, то воспользуйтесь командой /start 🚀",
             Markup.inlineKeyboard([
-                Markup.button.callback('ЗАПОЛНИТЕ АНКЕТУ 🚀', 'fill_form'), // Необходимо определить данные для обратного вызова
+                Markup.button.callback('ЗАПОЛНИТЕ АНКЕТУ 🚀', 'fill_form'),
             ])
         );
+       // await ctx.scene.enter('firstQuestion');
+
+
     } catch (error) {
         console.error('Произошла ошибка:', error);
         ctx.reply('Произошла ошибка при загрузке картинки или отправке сообщения.');
     }
 };
-
-
-bot.action('fill_form', searchCommand);
 
 
 module.exports = { startCommand };
