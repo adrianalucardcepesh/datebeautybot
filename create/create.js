@@ -1,7 +1,7 @@
 const { Telegraf, Markup, Scenes, session } = require('telegraf');
-// Сцена 'city'
 const axios = require('axios');
 const db = require('../database/db-pool');
+const { createAndShowProfile } = require('../create/createAndShowProfile.js');
 
 
 const fs = require('fs');
@@ -9,81 +9,81 @@ const path = require('path');
 const fetch = require('node-fetch');
 
 
-function createScenes(bot) {
 
-    const firstQuestionScene = new Scenes.BaseScene('firstQuestion');
 
-    firstQuestionScene.enter(async (ctx) => {
-        let text = 'Что бы составить анкету. Вам нужно ответить на несколько небольших вопросов  💬  : ';
-        await ctx.reply(text, {
-            reply_markup: {
-                keyboard: [
-                    [{ text: 'Вернуться в главное меню 🆒 ' }],
-                ],
-                resize_keyboard: true,
-                one_time_keyboard: true,
-            },
-        });
-
-        await ctx.reply(
-            'Сначала определимся с вашим полом ⚧:',
-            Markup.inlineKeyboard([
-                Markup.button.callback('Я парень 👨', 'mann'),
-                Markup.button.callback('Я девушка 👱‍♀️', 'womann'),
-            ])
-        );
-    });
-
-    firstQuestionScene.action('mann', async (ctx) => {
-        await ctx.answerCbQuery();
-        await ctx.reply('Вы выбрали "Я парень"  👨');
-        ctx.scene.enter('secondQuestion');
-    });
-    firstQuestionScene.action('womann', async (ctx) => {
-        await ctx.answerCbQuery();
-        await ctx.reply('Вы выбрали "Я девушка" 👱‍♀️');
-        ctx.scene.enter('secondQuestion');
-    });
-
-// Создайте сцену для второго вопроса
-
-    const secondQuestionScene = new Scenes.BaseScene('secondQuestion');
-
-    secondQuestionScene.enter(async (ctx) => {
-        await ctx.reply("Теперь выберите кого вы ищете:  💕 ", Markup.inlineKeyboard([
-            [
-
-                                Markup.button.callback('Парня 👨', 'search_mann'),
-                                Markup.button.callback('Девушку 👱‍♀️', 'search_womann')
-                            ],
-
-                            [
-                                Markup.button.callback('Любой пол 👤', 'any')
-                            ],
-
-        ]));
-    });
-
-// Обработчик кнопки "Парня 👨"
-    secondQuestionScene.action('search_mann', async (ctx) => {
-        await ctx.answerCbQuery();
-        await ctx.reply(`Вы выбрали: Парня 👨 `);
-        ctx.scene.enter('name'); // Переход на сцену ввода имени
-    });
-
-// Обработчик кнопки "Девушку 👱‍♀️"
-    secondQuestionScene.action('search_womann', async (ctx) => {
-        await ctx.answerCbQuery();
-        await ctx.reply(`Вы выбрали: Девушку 👱‍♀ `);
-        ctx.scene.enter('name'); // Переход на сцену ввода имени
-    });
-
-// Обработчик кнопки "Любой пол 👤"
-    secondQuestionScene.action('any', async (ctx) => {
-        await ctx.answerCbQuery();
-        await ctx.reply(`Вы выбрали: Любой пол 👤 `);
-        ctx.scene.enter('name'); // Переход на сцену ввода имени
-    });
+//     const firstQuestionScene = new Scenes.BaseScene('firstQuestion');
+//
+//     firstQuestionScene.enter(async (ctx) => {
+//         let text = 'Что бы составить анкету. Вам нужно ответить на несколько небольших вопросов  💯  : ';
+//         await ctx.reply(text, {
+//             reply_markup: {
+//                 keyboard: [
+//                     [{ text: 'Вернуться в главное меню ' }],
+//                 ],
+//                 resize_keyboard: true,
+//                 one_time_keyboard: true,
+//             },
+//         });
+//
+//         await ctx.reply(
+//             'Сначала определимся с вашим полом ⚧:',
+//             Markup.inlineKeyboard([
+//                 Markup.button.callback('Я парень 👨', 'mann'),
+//                 Markup.button.callback('Я девушка 👱‍♀️', 'womann'),
+//             ])
+//         );
+//     });
+//
+//     firstQuestionScene.action('mann', async (ctx) => {
+//         await ctx.answerCbQuery();
+//         await ctx.reply('Вы выбрали "Я парень"  👨');
+//         ctx.scene.enter('secondQuestion');
+//     });
+//     firstQuestionScene.action('womann', async (ctx) => {
+//         await ctx.answerCbQuery();
+//         await ctx.reply('Вы выбрали "Я девушка" 👱‍♀️');
+//         ctx.scene.enter('secondQuestion');
+//     });
+//
+// // Создайте сцену для второго вопроса
+//
+//     const secondQuestionScene = new Scenes.BaseScene('secondQuestion');
+//
+//     secondQuestionScene.enter(async (ctx) => {
+//         await ctx.reply("Теперь выберите кого вы ищете:  💕 ", Markup.inlineKeyboard([
+//             [
+//
+//                                 Markup.button.callback('Парня 👨', 'search_mann'),
+//                                 Markup.button.callback('Девушку 👱‍♀️', 'search_womann')
+//                             ],
+//
+//                             [
+//                                 Markup.button.callback('Любой пол 👤', 'any')
+//                             ],
+//
+//         ]));
+//     });
+//
+// // Обработчик кнопки "Парня 👨"
+//     secondQuestionScene.action('search_mann', async (ctx) => {
+//         await ctx.answerCbQuery();
+//         await ctx.reply(`Вы выбрали: Парня 👨 `);
+//         ctx.scene.enter('name'); // Переход на сцену ввода имени
+//     });
+//
+// // Обработчик кнопки "Девушку 👱‍♀️"
+//     secondQuestionScene.action('search_womann', async (ctx) => {
+//         await ctx.answerCbQuery();
+//         await ctx.reply(`Вы выбрали: Девушку 👱‍♀ `);
+//         ctx.scene.enter('name'); // Переход на сцену ввода имени
+//     });
+//
+// // Обработчик кнопки "Любой пол 👤"
+//     secondQuestionScene.action('any', async (ctx) => {
+//         await ctx.answerCbQuery();
+//         await ctx.reply(`Вы выбрали: Любой пол 👤 `);
+//         ctx.scene.enter('name'); // Переход на сцену ввода имени
+//     });
 
 
     //
@@ -110,6 +110,8 @@ function createScenes(bot) {
     //     );
     // });
 
+    function createScenes(bot) {
+
     const nameScene = new Scenes.BaseScene('name');
 
     nameScene.enter((ctx) => {
@@ -125,38 +127,21 @@ function createScenes(bot) {
         ctx.session.name = ctx.message.text;
         ctx.scene.enter('surname');
 
-        ctx.scene.enter('surname');
-
     });
     // Сцена 'surname'
     const surnameScene = new Scenes.BaseScene('surname');
     surnameScene.enter((ctx) => ctx.reply('Введите вашу фамилию:'));
     surnameScene.on('text', (ctx) => {
         ctx.session.surname = ctx.message.text;
-        ctx.scene.enter('gender');
-    });
-
-    const genderScene = new Scenes.BaseScene('gender');
-
-    genderScene.enter((ctx) => {
-        ctx.reply('Ваш пол:');
-    });
-
-    genderScene.on('text', (ctx) => {
-        if (!ctx.message.text) {
-            ctx.reply('Ваш пол обязателен для заполения!!');
-            return;
-        }
-
-        ctx.session.gender = ctx.message.text;
-
         ctx.scene.enter('city');
-
     });
 
     const cityScene = new Scenes.BaseScene('city');
 
     const ITEMS_PER_PAGE = 10; // Define how many items you want per page
+        cityScene.enter(async (ctx) => {
+            await renderCityPage(ctx, 0); // Start page at 0
+        });
     async function renderCityPage(ctx, currentPage) {
         try {
             // Get cities list from API
@@ -201,6 +186,8 @@ function createScenes(bot) {
             console.error('Error fetching city data:', error);
             await ctx.reply('An error occurred while fetching the list of cities.');
         }
+    }
+
 
 
 // Initialize a base scene for 'city'
@@ -248,11 +235,8 @@ function createScenes(bot) {
             }
         }
 
-    }
 
-    cityScene.enter(async (ctx) => {
-        await renderCityPage(ctx, 0); // Start page at 0
-    });
+
 
 
 
@@ -443,7 +427,7 @@ function createScenes(bot) {
         } else {
             // Если размер и формат файла прошли валидацию, продолжаем его обработку и загрузку в базу данных
             const file = await ctx.telegram.getFile(fileId);
-            const url = `https://api.telegram.org/file/bot6429157048:AAHgx-wS_eqF73lMshCAcHJHI3k_xf516Hk/${file.file_path}`;
+            const url = `https://api.telegram.org/file/6538687089:AAFc5JkevqmFzQNAFt9nSS7iJN68kig_iYQ/${file.file_path}`;
             const response = await fetch(url);
             const buffer = await response.buffer();
             const savedPath = path.join(__dirname, 'downloads', fileId);
@@ -454,23 +438,22 @@ function createScenes(bot) {
         }
     });
 
-    const Stage = new Scenes.Stage([
-        firstQuestionScene,
-        secondQuestionScene,
-        nameScene,
-        surnameScene,
-        genderScene,
-        cityScene,
-        ageScene,
-        infoScene,
-        searchScene,
-        goalScene,
-        mediaScene,
-    ]);
+const Stage = new Scenes.Stage([
+    // firstQuestionScene,
+    // secondQuestionScene,
+    nameScene,
+    surnameScene,
+    cityScene,
+    ageScene,
+    infoScene,
+    searchScene,
+    goalScene,
+    mediaScene,
+]);
 
-    bot.use(Stage.middleware());
+bot.use(Stage.middleware());
 
-    return Stage;
+return Stage;
 
 }
 function checkUploadedFiles(ctx) {

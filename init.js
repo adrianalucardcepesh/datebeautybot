@@ -5,18 +5,19 @@ const { createScenes } = require ("./create/create")
 
 
 
-// bot.use((ctx, next) => {
-//     if (!ctx.session) {
-//         ctx.session = {};
-//     }
-//     if (!ctx.session.profiles) {
-//         ctx.session.profiles = []; // Инициализируйте массив анкет здесь
-//     }
-//     next();
-// });
+bot.use((ctx, next) => {
+    if (!ctx.session) {
+        ctx.session = {};
+    }
+    if (!ctx.session.profiles) {
+        ctx.session.profiles = []; // Инициализируйте массив анкет здесь
+    }
+    next();
+});
 
 bot.use(session());
 createScenes(bot)
+
 bot.action(['mann', 'womann', 'anyy'], (ctx) => {
 
     if (!ctx.session) {
@@ -37,7 +38,7 @@ bot.action(['mann', 'womann', 'anyy'], (ctx) => {
 bot.command('start', startCommand);
 bot.action('fill_form', async (ctx) => {
     await ctx.answerCbQuery();
-    await ctx.scene.enter('firstQuestion');
+    await ctx.scene.enter('name');
 });
 
 

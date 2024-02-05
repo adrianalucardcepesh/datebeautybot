@@ -1,8 +1,8 @@
 // const { Markup, Stage, BaseScene } = require('telegraf');
 //
 // // Создайте сцену для первого вопроса
-// const firstQuestionScene = new BaseScene('firstQuestion');
-// firstQuestionScene.enter(async (ctx) => {
+// const otherQuestionScene = new BaseScene('firstQuestion');
+// otherQuestionScene.enter(async (ctx) => {
 //     await ctx.reply(
 //         'Сначала определимся с вашим полом ⚧:',
 //         Markup.inlineKeyboard([
@@ -11,7 +11,7 @@
 //         ])
 //     );
 // });
-// firstQuestionScene.action(['mann', 'womann'], async (ctx) => {
+// otherQuestionScene.action(['mann', 'womann'], async (ctx) => {
 //     // Обработайте ответ и перейдите ко второму вопросу
 //     await ctx.answerCbQuery();
 //     ctx.scene.enter('secondQuestion');
@@ -36,7 +36,7 @@
 // });
 //
 // // Создайте менеджер сцен и зарегистрируйте сцены
-// const stage = new Stage([firstQuestionScene, secondQuestionScene]);
+// const stage = new Stage([otherQuestionScene, secondQuestionScene]);
 //
 // // Добавьте менеджер сцен в миддлвар бота
 // const bot = new Telegraf(process.env.BOT_TOKEN);

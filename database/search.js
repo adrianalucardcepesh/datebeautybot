@@ -52,10 +52,6 @@ async function renderCityPage(ctx, currentPage) {
     ctx.scene.enter('age');
 }
 
-module.exports = {
-    insertCityForUser
-};
-
 
 // Initialize a base scene for 'city'
 // В вашем коде для cityScene или в другом месте, где создаются кнопки городов
@@ -95,7 +91,6 @@ async function insertCityForUser(userId, selectedCity) {
         if (conn) conn.release();
     }
 }
-
 
 cityScene.enter(async (ctx) => {
     await renderCityPage(ctx, 0); // Start page at 0
