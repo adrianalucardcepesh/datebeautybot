@@ -1,5 +1,6 @@
 const db = require('../database/db-pool.js');
 
+
 async function checkIfUserExists(telegramId) {
     let conn;
     try {
@@ -42,21 +43,29 @@ const createProfileData = async (ctx, { telegramId, fileId, filePath, ...data })
         const insertSql = `
             INSERT INTO users
             (telegram_id, username, name, surname, age, info, search, fileId, filePath, fileType)
-            VALUES (?, ?, ?, ?, ? , ?, ?, ?, ?, ? )
+            VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
+                ON DUPLICATE KEY UPDATE
+                                     username = VALUES(username),
+                                     name = VALUES(name),
+                                     surname = VALUES(surname),
+                                     age = VALUES(age),
+                                     info = VALUES(info),
+                                     search = VALUES(search),
+                                     fileId = VALUES(fileId),
+                                     filePath = VALUES(filePath),
+                                     fileType = VALUES(fileType)
         `;
         await conn.query(insertSql, [
             ctx.from.id,
-            // data.gender,
             ctx.from.username,
             data.name,
             data.surname,
-            // data.city,
             data.age,
             data.info,
             data.search,
-            data.fileId, // Исправлено с fileId на data.fileId
-            data.filePath, // Исправлено с filePath на data.filePath
-            fileType,
+            data.fileId, // Предполагается, что эти поля уже содержат правильные значения
+            data.filePath,
+            fileType // Предполагается, что fileType переменная уже определена и содержит правильное значение
         ]);
         conn.release();
     } catch (error) {

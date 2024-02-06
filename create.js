@@ -1,7 +1,9 @@
 const { Telegraf, Markup, Scenes, session } = require('telegraf');
 const axios = require('axios');
-const db = require('../database/db-pool');
-const { createAndShowProfile } = require('../create/createAndShowProfile.js');
+const db = require('./database/db-pool');
+const { createAndShowProfile } = require('./create/createAndShowProfile.js');
+const { insertOrUpdateGender } = require('./insertOrUpdateGender')
+const { insertOrUpdateGenderSearch } = require('./insertOrUpdateGender')
 
 
 const fs = require('fs');
@@ -11,86 +13,14 @@ const fetch = require('node-fetch');
 
 
 
-//     const firstQuestionScene = new Scenes.BaseScene('firstQuestion');
-//
-//     firstQuestionScene.enter(async (ctx) => {
-//         let text = 'Что бы составить анкету. Вам нужно ответить на несколько небольших вопросов  💯  : ';
-//         await ctx.reply(text, {
-//             reply_markup: {
-//                 keyboard: [
-//                     [{ text: 'Вернуться в главное меню ' }],
-//                 ],
-//                 resize_keyboard: true,
-//                 one_time_keyboard: true,
-//             },
-//         });
-//
-//         await ctx.reply(
-//             'Сначала определимся с вашим полом ⚧:',
-//             Markup.inlineKeyboard([
-//                 Markup.button.callback('Я парень 👨', 'mann'),
-//                 Markup.button.callback('Я девушка 👱‍♀️', 'womann'),
-//             ])
-//         );
-//     });
-//
-//     firstQuestionScene.action('mann', async (ctx) => {
-//         await ctx.answerCbQuery();
-//         await ctx.reply('Вы выбрали "Я парень"  👨');
-//         ctx.scene.enter('secondQuestion');
-//     });
-//     firstQuestionScene.action('womann', async (ctx) => {
-//         await ctx.answerCbQuery();
-//         await ctx.reply('Вы выбрали "Я девушка" 👱‍♀️');
-//         ctx.scene.enter('secondQuestion');
-//     });
-//
-// // Создайте сцену для второго вопроса
-//
-//     const secondQuestionScene = new Scenes.BaseScene('secondQuestion');
-//
-//     secondQuestionScene.enter(async (ctx) => {
-//         await ctx.reply("Теперь выберите кого вы ищете:  💕 ", Markup.inlineKeyboard([
-//             [
-//
-//                                 Markup.button.callback('Парня 👨', 'search_mann'),
-//                                 Markup.button.callback('Девушку 👱‍♀️', 'search_womann')
-//                             ],
-//
-//                             [
-//                                 Markup.button.callback('Любой пол 👤', 'any')
-//                             ],
-//
-//         ]));
-//     });
-//
-// // Обработчик кнопки "Парня 👨"
-//     secondQuestionScene.action('search_mann', async (ctx) => {
-//         await ctx.answerCbQuery();
-//         await ctx.reply(`Вы выбрали: Парня 👨 `);
-//         ctx.scene.enter('name'); // Переход на сцену ввода имени
-//     });
-//
-// // Обработчик кнопки "Девушку 👱‍♀️"
-//     secondQuestionScene.action('search_womann', async (ctx) => {
-//         await ctx.answerCbQuery();
-//         await ctx.reply(`Вы выбрали: Девушку 👱‍♀ `);
-//         ctx.scene.enter('name'); // Переход на сцену ввода имени
-//     });
-//
-// // Обработчик кнопки "Любой пол 👤"
-//     secondQuestionScene.action('any', async (ctx) => {
-//         await ctx.answerCbQuery();
-//         await ctx.reply(`Вы выбрали: Любой пол 👤 `);
-//         ctx.scene.enter('name'); // Переход на сцену ввода имени
-//     });
+
 
 
     //
     // const secondQuestionScene = new Scenes.BaseScene('secondQuestion');
     // secondQuestionScene.enter(async (ctx) => {
     //     // Получаем выбор пользователя из первого вопроса
-    //     const userChoice = ctx.session.userGender || 'не определено';
+    //     const userChoice = ctx.session.usergender_to_search || 'не определено';
     //     // Сообщаем об этом
     //     await ctx.reply(`Вы выбрали: ${userChoice}`);
     //     // Задаем второй вопрос
@@ -111,6 +41,103 @@ const fetch = require('node-fetch');
     // });
 
     function createScenes(bot) {
+
+        const firstQuestionScene = new Scenes.BaseScene('firstQuestion');
+
+        firstQuestionScene.enter(async (ctx) => {
+            let text = 'Что бы составить анкету. Вам нужно ответить на несколько небольших вопросов  💯  : ';
+            await ctx.reply(text, {
+                reply_markup: {
+                    keyboard: [
+                        [{text: 'Вернуться в главное меню '}],
+                    ],
+                    resize_keyboard: true,
+                    one_time_keyboard: true,
+                },
+            });
+
+            await ctx.reply(
+                'Сначала определимся с вашим полом ⚧:',
+                Markup.inlineKeyboard([
+                    Markup.button.callback('Я парень 👨', 'mann'),
+                    Markup.button.callback('Я девушка 👱‍♀️', 'womann'),
+                ])
+            );
+        });
+
+
+        firstQuestionScene.action('mann', async (ctx) => {
+            const userId = ctx.from.id; // ID пользователя в Telegram
+            const gender = 'парень'; // Значение для пола
+
+            await ctx.answerCbQuery();
+            await ctx.reply('Вы выбрали "Я парень" 👨');
+            await insertOrUpdateGender(userId, gender);
+
+            ctx.scene.enter('secondQuestion');
+        });
+
+        firstQuestionScene.action('womann', async (ctx) => {
+            const userId = ctx.from.id; // ID пользователя в Telegram
+            const gender = 'девушка'; // Значение для пола
+
+            await ctx.answerCbQuery();
+            await ctx.reply('Вы выбрали "Я девушка" 👱‍♀️');
+            await insertOrUpdateGender(userId, gender);
+
+            ctx.scene.enter('secondQuestion');
+        });
+
+        const secondQuestionScene = new Scenes.BaseScene('secondQuestion');
+
+        secondQuestionScene.enter(async (ctx) => {
+            await ctx.reply("Теперь выберите кого вы ищете:  💕 ", Markup.inlineKeyboard([
+                [
+
+                    Markup.button.callback('Парня 👨', 'search_mann'),
+                    Markup.button.callback('Девушку 👱‍♀️', 'search_womann')
+                ],
+
+                [
+                    Markup.button.callback('Любой пол 👤', 'any')
+                ],
+
+            ]));
+        });
+
+        secondQuestionScene.action('search_mann', async (ctx) => {
+            const userId = ctx.from.id; // ID пользователя в Telegram
+            const gender_to_search = 'парень'; // Значение для пола
+
+            await ctx.answerCbQuery();
+            await ctx.reply(`Вы выбрали: Парня 👨 `);
+            await insertOrUpdateGenderSearch(userId, gender_to_search);
+
+            ctx.scene.enter('name');
+        });
+
+        secondQuestionScene.action('search_womann', async (ctx) => {
+            const userId = ctx.from.id; // ID пользователя в Telegram
+            const gender_to_search = 'девушка'; // Значение для пола
+
+            await ctx.answerCbQuery();
+            await ctx.reply(`Вы выбрали:  Девушку 👱‍♀ `);
+            await insertOrUpdateGenderSearch(userId, gender_to_search);
+
+            ctx.scene.enter('name');
+        });
+
+// Обработчик кнопки "Любой пол 👤"
+        secondQuestionScene.action('any', async (ctx) => {
+            const userId = ctx.from.id; // ID пользователя в Telegram
+            const gender_to_search = 'любой'; // Значение для пола
+
+
+            await ctx.answerCbQuery();
+            await ctx.reply(`Вы выбрали: Любой пол 👤 `);
+            await insertOrUpdateGenderSearch(userId, gender_to_search);
+            ctx.scene.enter('name'); // Переход на сцену ввода имени
+        });
 
     const nameScene = new Scenes.BaseScene('name');
 
@@ -194,43 +221,34 @@ const fetch = require('node-fetch');
         // В вашем коде для cityScene или в другом месте, где создаются кнопки городов
         cityScene.action(/^city_select_(.+)$/, async (ctx) => {
             const selectedCity = ctx.match[1];
-            const userId = ctx.from.id; // Telegram ID пользователя, если он совпадает с вашим идентификатором в бд; если нет, вам может потребоваться дополнительная логика для получения идентификатора пользователя
+            const telegramId = ctx.from.id; // Поправили название переменной, чтобы оно совпадало с названием поля в БД
             try {
-                await insertCityForUser(userId, selectedCity);
-                await ctx.reply(`Вы выбрали город:  ${selectedCity}`);
-                ctx.scene.enter('age');
-
+                await insertCityForUser(telegramId, selectedCity);
+                await ctx.reply(`Вы выбрали город: ${selectedCity}`);
+                await ctx.scene.enter('age');
             } catch (error) {
-                // Логируем ошибку и сообщаем пользователю
                 console.error('Ошибка при вставке города в базу данных:', error);
                 await ctx.reply('Произошла ошибка при сохранении вашего выбора города.');
             }
-
-
-            // Закрытие inline-клавиатуры
             await ctx.answerCbQuery();
-        })
+        });
 
 
-        async function insertCityForUser(userId, selectedCity) {
+        async function insertCityForUser(telegramId, selectedCity) {
             let conn;
             try {
                 conn = await db.getConnection();
-                // Here we're assuming the table is named 'users' and has columns 'id' for userID and 'city' for the city
-                // Also assuming 'id' is a primary key or unique field so "upsert" can be done using ON DUPLICATE KEY UPDATE
                 const query = `
-                    INSERT INTO users (id, city)
-                    VALUES (?, ?) ON DUPLICATE KEY
-                    UPDATE city =
-                    VALUES (city)
-                `;
-                const result = await conn.query(query, [userId, selectedCity]);
+            INSERT INTO users (telegram_id, city)
+            VALUES (?, ?)
+            ON DUPLICATE KEY UPDATE city = VALUES(city);
+        `;
+                const result = await conn.query(query, [telegramId, selectedCity]);
                 return result;
             } catch (error) {
                 console.error('An error occurred while inserting/updating the city for the user:', error);
                 throw error;
             } finally {
-                // Always close connection whether query was successful or not
                 if (conn) conn.release();
             }
         }
@@ -439,8 +457,8 @@ const fetch = require('node-fetch');
     });
 
 const Stage = new Scenes.Stage([
-    // firstQuestionScene,
-    // secondQuestionScene,
+    firstQuestionScene,
+    secondQuestionScene,
     nameScene,
     surnameScene,
     cityScene,

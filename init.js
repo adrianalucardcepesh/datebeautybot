@@ -1,7 +1,8 @@
 const { Telegraf, Markup, Scenes, session } = require('telegraf');
 const bot = require('./config/config');
 const { startCommand } = require ("./keyboards/greatKey");
-const { createScenes } = require ("./create/create")
+const { createScenes } = require ("./create")
+
 
 
 
@@ -24,7 +25,7 @@ bot.action(['mann', 'womann', 'anyy'], (ctx) => {
         ctx.session = {};
     }
 
-    if (ctx.session.genderChoice) {
+    if (ctx.session.gender_to_searchChoice) {
         return ctx.reply('Вы уже сделали свой выбор пола. Хотите заполнить анкету заново?', {
             reply_markup: {
                 inline_keyboard: [
@@ -38,16 +39,20 @@ bot.action(['mann', 'womann', 'anyy'], (ctx) => {
 bot.command('start', startCommand);
 bot.action('fill_form', async (ctx) => {
     await ctx.answerCbQuery();
-    await ctx.scene.enter('name');
+    await ctx.scene.enter('firstQuestion');
 });
 
+bot.action('create', async (ctx) => {
+    try {
+        ctx.scene.enter('startScene');
 
-
-
-    bot.action('reset', (ctx) => {
-        // Предполагаем, что функция startCommand(ctx) начинает процедуру заново
-        startCommand(ctx);
-        ctx.deleteMessage(); // Опционально: удаляем сообщение с клавиатурой
+    } catch (err) {
+        console.error(err);
+        ctx.reply('У вас нету заполненной анкеты.');
+    }
+});
+    bot.action('updater', (ctx) => {
+    startCommand(ctx);
     });
 
 
@@ -60,37 +65,37 @@ bot.action('fill_form', async (ctx) => {
 
     // // createScenes(bot)
     // console.log(ctx.match); // Добавлено для отладки
-    // let genderText = '';
+    // let gender_to_searchText = '';
 
     // Присваиваем строку из первого элемента массива ctx.match
     // const action = ctx.match[0];
 
     // switch (action) {
     //     case 'mann':
-    //         genderText = 'Парня';
+    //         gender_to_searchText = 'Парня';
     //         break;
     //     case 'womann':
-    //         genderText = 'Девушку';
+    //         gender_to_searchText = 'Девушку';
     //         break;
     //     case 'anyy':
-    //         genderText = 'Любой пол';
+    //         gender_to_searchText = 'Любой пол';
     //         break;
     //     default:
     //         // Если ни одно из значений не совпадает, выбирается это
-    //         genderText = 'Любой пол';
+    //         gender_to_searchText = 'Любой пол';
     //         break;
     // }
 
-    // ctx.session.genderChoice = action;// Здесь также нужно использовать исправленную переменную action
+    // ctx.session.gender_to_searchChoice = action;// Здесь также нужно использовать исправленную переменную action
     //
     // // Исправленная строка для ответа пользователю
-    // ctx.reply(`Вы выбрали "${genderText}"`);
+    // ctx.reply(`Вы выбрали "${gender_to_searchText}"`);
     //
-    // bot.action('mann', genderCommand);
+    // bot.action('mann', gender_to_searchCommand);
     //
-    // bot.action('womann', genderCommand);
+    // bot.action('womann', gender_to_searchCommand);
     //
-    // bot.action('anyy', genderCommand);
+    // bot.action('anyy', gender_to_searchCommand);
 
 
 
