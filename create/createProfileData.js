@@ -56,15 +56,15 @@ const createProfileData = async (ctx, { telegramId, fileId, filePath, ...data })
                                      fileType = VALUES(fileType)
         `;
         await conn.query(insertSql, [
-            ctx.from.id,
+            telegramId, // Возможно стоит использовать telegramId из параметров, а не ctx.from.id
             ctx.from.username,
             data.name,
             data.surname,
             data.age,
             data.info,
             data.search,
-            data.fileId, // Предполагается, что эти поля уже содержат правильные значения
-            data.filePath,
+            fileId,
+            filePath, // Убедитесь что переменная filePath определена, или ее нужно заменить
             fileType // Предполагается, что fileType переменная уже определена и содержит правильное значение
         ]);
         conn.release();

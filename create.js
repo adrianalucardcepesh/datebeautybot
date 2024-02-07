@@ -342,7 +342,7 @@ const fetch = require('node-fetch');
 
 // Сцена 'search'
     const searchScene = new Scenes.BaseScene('search');
-    searchScene.enter((ctx) => ctx.reply('Опишите кратко кого или что вы ищите, например: \\n друга, \\п артнера на вечер, \\n отношения, \\n делового партнера, \\n товарища по переписке, \\n работу, \\n финансовую \\n или моральную помощь и т.д'));
+    searchScene.enter((ctx) => ctx.reply('Опишите кратко кого или что вы ищите, например: \n✅\n друга, \n✅\n артнера на вечер, \n✅\n отношения, \n✅\n делового партнера, \n✅ товарища по переписке, \n✅ работу, \n✅ финансовую \n✅ или моральную помощь, \n другое и т.д'));
     searchScene.on('text', (ctx) => {
         ctx.session.search = ctx.message.text;
         ctx.scene.enter('goal');
