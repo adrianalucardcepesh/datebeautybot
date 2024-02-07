@@ -5,6 +5,7 @@ const { createScenes } = require ("./create")
 const userDelete = require('./delete')
 const { sendProfile } = require ("./sendProfile")
 const { dateUsers } = require ("./dateUsers")
+const adminChatId = require('./config/config');
 
 
 
@@ -124,7 +125,33 @@ bot.action('create', async (ctx) => {
             }
             await sendProfile(ctx);
         });
-});
+        bot.action('complain', (ctx) => {
+            // Пользователь выбрал "Пожаловаться на анкету", запросим у него текст жалобы
+            ctx.session.complainStep = 'waiting_for_complaint';
+            ctx.reply('Пожалуйста, напишите текст вашей жалобы:');
+        });
+
+// Middleware для сохранения состояния сессии
+        bot.use((ctx, next) => {
+            ctx.session = ctx.session || {};
+            return next();
+        });
+
+        // Обработчик для текстовых сообщений
+        bot.on('text', (ctx) => {
+            if (ctx.session.complainStep === 'waiting_for_complaint') {
+                // Пользователь написал жалобу, отправим её в админский чат
+                const complaintText = ctx.message.text;
+                bot.telegram.sendMessage(6638651166, `Жалоба от пользователя ${ctx.from.username || ctx.from.id}: ${complaintText}`);
+                ctx.reply('Ваша жалоба была отправлена администратору.');
+                // Сбросим состояние сессии
+                ctx.session.complainStep = null;
+            }
+        });
+
+
+
+    });
 
 
 
