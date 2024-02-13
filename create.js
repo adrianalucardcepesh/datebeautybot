@@ -20,7 +20,7 @@ const fetch = require('node-fetch');
     // const secondQuestionScene = new Scenes.BaseScene('secondQuestion');
     // secondQuestionScene.enter(async (ctx) => {
     //     // Получаем выбор пользователя из первого вопроса
-    //     const userChoice = ctx.session.usergender_to_search || 'не определено';
+    //     const userChoice = ctx.session.usergendersearch || 'не определено';
     //     // Сообщаем об этом
     //     await ctx.reply(`Вы выбрали: ${userChoice}`);
     //     // Задаем второй вопрос
@@ -107,22 +107,22 @@ const fetch = require('node-fetch');
 
         secondQuestionScene.action('search_mann', async (ctx) => {
             const userId = ctx.from.id; // ID пользователя в Telegram
-            const gender_to_search = 'парень'; // Значение для пола
+            const gendersearch = 'парень'; // Значение для пола
 
             await ctx.answerCbQuery();
             await ctx.reply(`Вы выбрали: Парня 👨 `);
-            await insertOrUpdateGenderSearch(userId, gender_to_search);
+            await insertOrUpdateGenderSearch(userId, gendersearch);
 
             ctx.scene.enter('name');
         });
 
         secondQuestionScene.action('search_womann', async (ctx) => {
             const userId = ctx.from.id; // ID пользователя в Telegram
-            const gender_to_search = 'девушка'; // Значение для пола
+            const gendersearch = 'девушка'; // Значение для пола
 
             await ctx.answerCbQuery();
             await ctx.reply(`Вы выбрали:  Девушку 👱‍♀ `);
-            await insertOrUpdateGenderSearch(userId, gender_to_search);
+            await insertOrUpdateGenderSearch(userId, gendersearch);
 
             ctx.scene.enter('name');
         });
@@ -130,12 +130,12 @@ const fetch = require('node-fetch');
 // Обработчик кнопки "Любой пол 👤"
         secondQuestionScene.action('any', async (ctx) => {
             const userId = ctx.from.id; // ID пользователя в Telegram
-            const gender_to_search = 'любой'; // Значение для пола
+            const gendersearch = 'любой'; // Значение для пола
 
 
             await ctx.answerCbQuery();
             await ctx.reply(`Вы выбрали: Любой пол 👤 `);
-            await insertOrUpdateGenderSearch(userId, gender_to_search);
+            await insertOrUpdateGenderSearch(userId, gendersearch);
             ctx.scene.enter('name'); // Переход на сцену ввода имени
         });
 
@@ -342,7 +342,7 @@ const fetch = require('node-fetch');
 
 // Сцена 'search'
     const searchScene = new Scenes.BaseScene('search');
-    searchScene.enter((ctx) => ctx.reply('Опишите кратко кого или что вы ищите, например: \n✅\n друга, \n✅\n артнера на вечер, \n✅\n отношения, \n✅\n делового партнера, \n✅ товарища по переписке, \n✅ работу, \n✅ финансовую \n✅ или моральную помощь, \n другое и т.д'));
+    searchScene.enter((ctx) => ctx.reply('Опишите кратко кого или что вы ищите, например: \n✅\n друга, \n✅\n партнера на вечер, \n✅\n отношения, \n✅\n делового партнера, \n✅ товарища по переписке, \n✅ работу, \n✅ финансовую \n✅ или моральную помощь, \n другое и т.д'));
     searchScene.on('text', (ctx) => {
         ctx.session.search = ctx.message.text;
         ctx.scene.enter('goal');

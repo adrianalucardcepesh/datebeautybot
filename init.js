@@ -3,10 +3,10 @@ const bot = require('./config/config');
 const { startCommand } = require ("./keyboards/greatKey");
 const { createScenes } = require ("./create")
 const userDelete = require('./delete')
-const { sendProfile } = require ("./sendProfile")
 const { dateUsers } = require ("./dateUsers")
-const adminChatId = require('./config/config');
-
+const geolib = require('geolib');
+const util = require('util');
+const { sendProfile } = require('./sendProfile')
 
 
 
@@ -17,11 +17,18 @@ bot.use((ctx, next) => {
     if (!ctx.session.profiles) {
         ctx.session.profiles = []; // Инициализируйте массив анкет здесь
     }
+    if (ctx.session.currentUserIndex === undefined) {
+        ctx.session.currentUserIndex = 0;
+    }
     next();
 });
 
+
+
 bot.use(session());
 createScenes(bot)
+
+
 
 bot.action(['mann', 'womann', 'anyy'], (ctx) => {
 
@@ -29,7 +36,7 @@ bot.action(['mann', 'womann', 'anyy'], (ctx) => {
         ctx.session = {};
     }
 
-    if (ctx.session.gender_to_searchChoice) {
+    if (ctx.session.gendersearchChoice) {
         return ctx.reply('Вы уже сделали свой выбор пола. Хотите заполнить анкету заново?', {
             reply_markup: {
                 inline_keyboard: [
@@ -69,14 +76,16 @@ bot.action('create', async (ctx) => {
                 ctx.reply('У вас нету заполненной анкеты.');
             }
     });
-    bot.action('search', async (ctx) => {
+        bot.action('delete', async (ctx) => {
             try {
-                await dateUsers(ctx);
+                await userDelete.deleteFunction(ctx);
             } catch (err) {
                 console.error(err);
-                ctx.reply('Вы просмотрели все доступные анкеты');
+                ctx.reply('У вас нету заполненной анкеты.');
             }
-    });
+        });
+
+
         bot.action('like', async (ctx) => {
             const { profiles, currentProfileIndex } = ctx.session;
 
@@ -125,6 +134,7 @@ bot.action('create', async (ctx) => {
             }
             await sendProfile(ctx);
         });
+
         bot.action('complain', (ctx) => {
             // Пользователь выбрал "Пожаловаться на анкету", запросим у него текст жалобы
             ctx.session.complainStep = 'waiting_for_complaint';
@@ -148,6 +158,56 @@ bot.action('create', async (ctx) => {
                 ctx.session.complainStep = null;
             }
         });
+        bot.action('search', async (ctx) => {
+            try {
+                await dateUsers(ctx);
+
+            } catch (err) {
+                console.error(util.inspect(err, { depth: null })); // Show complete error without limitation
+                ctx.reply('Вы просмотрели все доступные анкеты');
+            }
+        });
+        // bot.command('search', async (ctx) => {
+        //     try {
+        //         const userCity = await getCityForUser(ctx.from.id); // Получаем город пользователя из БД
+        //         if (!userCity) {
+        //             ctx.reply('Ваш город не установлен. Пожалуйста, установите ваш город.');
+        //             return;
+        //         }
+        //
+        //         const userCityCoordinates = citiesCoordinates[userCity]; // Получаем координаты города пользователя
+        //         if (!userCityCoordinates) {
+        //             ctx.reply(`Координаты для города ${userCity} не найдены.`);
+        //             return;
+        //         }
+        //
+        //         // Здесь должен быть код, который получает список пользователей из базы данных (вместо usersDatabase)
+        //         // Предполагаем, что есть функция getUsersFromDb, которую нужно реализовать
+        //         const usersFromDb = await dateUsers();
+        //
+        //         // Отфильтровываем пользователей, которые находятся в maxDistance от текущего пользователя
+        //         const maxDistance = 50000; // максимальное расстояние в метрах
+        //         const nearbyUsers = usersFromDb.filter(user => {
+        //             const userCityCoordinates = citiesCoordinates[user.city];
+        //             console.log('User city coordinates:', userCityCoordinates);
+        //             if (!userCityCoordinates) return false;
+        //
+        //             const distance = geolib.getDistance(userCityCoordinates, userCityCoordinates);
+        //             return distance <= maxDistance;
+        //         });
+        //
+        //         // Формирование и отправка сообщения
+        //         let message = nearbyUsers.length ? 'Ближайшие пользователи:\n' : 'Поблизости нет пользователей.\n';
+        //         nearbyUsers.forEach(user => {
+        //             message += `Username: ${user.username}, Age: ${user.age}, City: ${user.city}\n`;
+        //         });
+        //
+        //         ctx.reply(message);
+        //     } catch (error) {
+        //         console.error(error);
+        //         ctx.reply('Произошла ошибка при поиске пользователей.');
+        //     }
+        // });
 
 
 
@@ -163,37 +223,37 @@ bot.action('create', async (ctx) => {
 
     // // createScenes(bot)
     // console.log(ctx.match); // Добавлено для отладки
-    // let gender_to_searchText = '';
+    // let gendersearchText = '';
 
     // Присваиваем строку из первого элемента массива ctx.match
     // const action = ctx.match[0];
 
     // switch (action) {
     //     case 'mann':
-    //         gender_to_searchText = 'Парня';
+    //         gendersearchText = 'Парня';
     //         break;
     //     case 'womann':
-    //         gender_to_searchText = 'Девушку';
+    //         gendersearchText = 'Девушку';
     //         break;
     //     case 'anyy':
-    //         gender_to_searchText = 'Любой пол';
+    //         gendersearchText = 'Любой пол';
     //         break;
     //     default:
     //         // Если ни одно из значений не совпадает, выбирается это
-    //         gender_to_searchText = 'Любой пол';
+    //         gendersearchText = 'Любой пол';
     //         break;
     // }
 
-    // ctx.session.gender_to_searchChoice = action;// Здесь также нужно использовать исправленную переменную action
+    // ctx.session.gendersearchChoice = action;// Здесь также нужно использовать исправленную переменную action
     //
     // // Исправленная строка для ответа пользователю
-    // ctx.reply(`Вы выбрали "${gender_to_searchText}"`);
+    // ctx.reply(`Вы выбрали "${gendersearchText}"`);
     //
-    // bot.action('mann', gender_to_searchCommand);
+    // bot.action('mann', gendersearchCommand);
     //
-    // bot.action('womann', gender_to_searchCommand);
+    // bot.action('womann', gendersearchCommand);
     //
-    // bot.action('anyy', gender_to_searchCommand);
+    // bot.action('anyy', gendersearchCommand);
 
 
 

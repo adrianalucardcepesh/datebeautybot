@@ -1,7 +1,7 @@
 //
 // const { Telegraf, Markup, Scenes, session } = require('telegraf');
 // const bot = require('../config/config');
-// const gender_to_searchCommand = async (ctx) => {
+// const gendersearchCommand = async (ctx) => {
 //     try {
 //         await ctx.telegram.sendMessage(ctx.chat.id, 'Теперь выберите кого вы ищите: ', {
 //             reply_markup: {
@@ -19,5 +19,5 @@
 // };
 //
 // module.exports = {
-//     gender_to_searchCommand
+//     gendersearchCommand
 // };

@@ -1,5 +1,5 @@
-const db = require('./database/db-pool.js');
 const { Telegraf, Markup, Scenes, session } = require('telegraf');
+const db = require('./database/db-pool'); // Убедитесь в правильности пути к вашему модулю пула БД
 
 
 const sendProfile = async (ctx) => {

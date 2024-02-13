@@ -19,16 +19,16 @@ const bot = require('./config/config');
         await conn.end(); // Не забудьте закрыть соединение после запроса
     }
 
-    const insertOrUpdateGenderSearch = async (userId, gender_to_search) => {
+    const insertOrUpdateGenderSearch = async (userId, gendersearch) => {
         const conn = await db.getConnection();
-        console.log(`Проверяем существование пользователя с ID: ${userId} и полом: ${gender_to_search}`);
+        console.log(`Проверяем существование пользователя с ID: ${userId} и полом: ${gendersearch}`);
         const userExists = await conn.query('SELECT 1 FROM users WHERE telegram_id = ?', [userId]);
         if (userExists.length > 0) {
             console.log(`Обновляем пол пользователя с ID: ${userId}`);
-            await conn.query('UPDATE users SET gender_to_search = ? WHERE telegram_id = ?', [gender_to_search, userId]);
+            await conn.query('UPDATE users SET gendersearch = ? WHERE telegram_id = ?', [gendersearch, userId]);
         } else {
-            console.log(`Вставляем нового пользователя с ID: ${userId} и полом: ${gender_to_search}`);
-            await conn.query('INSERT INTO users (telegram_id, gender_to_search) VALUES (?, ?)', [userId, gender_to_search]);
+            console.log(`Вставляем нового пользователя с ID: ${userId} и полом: ${gendersearch}`);
+            await conn.query('INSERT INTO users (telegram_id, gendersearch) VALUES (?, ?)', [userId, gendersearch]);
         }
         await conn.end(); // Не забудьте закрыть соединение после запроса
     }
