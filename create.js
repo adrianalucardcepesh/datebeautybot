@@ -20,7 +20,7 @@ const fetch = require('node-fetch');
     // const secondQuestionScene = new Scenes.BaseScene('secondQuestion');
     // secondQuestionScene.enter(async (ctx) => {
     //     // Получаем выбор пользователя из первого вопроса
-    //     const userChoice = ctx.session.usergendersearch || 'не определено';
+    //     const userChoice = ctx.session.usergender_to_search || 'не определено';
     //     // Сообщаем об этом
     //     await ctx.reply(`Вы выбрали: ${userChoice}`);
     //     // Задаем второй вопрос
@@ -107,22 +107,22 @@ const fetch = require('node-fetch');
 
         secondQuestionScene.action('search_mann', async (ctx) => {
             const userId = ctx.from.id; // ID пользователя в Telegram
-            const gendersearch = 'парень'; // Значение для пола
+            const gender_to_search = 'парень'; // Значение для пола
 
             await ctx.answerCbQuery();
             await ctx.reply(`Вы выбрали: Парня 👨 `);
-            await insertOrUpdateGenderSearch(userId, gendersearch);
+            await insertOrUpdateGenderSearch(userId, gender_to_search);
 
             ctx.scene.enter('name');
         });
 
         secondQuestionScene.action('search_womann', async (ctx) => {
             const userId = ctx.from.id; // ID пользователя в Telegram
-            const gendersearch = 'девушка'; // Значение для пола
+            const gender_to_search = 'девушка'; // Значение для пола
 
             await ctx.answerCbQuery();
             await ctx.reply(`Вы выбрали:  Девушку 👱‍♀ `);
-            await insertOrUpdateGenderSearch(userId, gendersearch);
+            await insertOrUpdateGenderSearch(userId, gender_to_search);
 
             ctx.scene.enter('name');
         });
@@ -130,12 +130,12 @@ const fetch = require('node-fetch');
 // Обработчик кнопки "Любой пол 👤"
         secondQuestionScene.action('any', async (ctx) => {
             const userId = ctx.from.id; // ID пользователя в Telegram
-            const gendersearch = 'любой'; // Значение для пола
+            const gender_to_search = 'любой'; // Значение для пола
 
 
             await ctx.answerCbQuery();
             await ctx.reply(`Вы выбрали: Любой пол 👤 `);
-            await insertOrUpdateGenderSearch(userId, gendersearch);
+            await insertOrUpdateGenderSearch(userId, gender_to_search);
             ctx.scene.enter('name'); // Переход на сцену ввода имени
         });
 
@@ -199,7 +199,7 @@ const fetch = require('node-fetch');
 
             await ctx.reply('Выберите свой город: 🏙', keyboard);
 
-            let text = 'Чтобы быстрее найти ваш город, напишите его название снизу \n\n Или впишите первые три-четыре буквы города и нажмите enter 👇';
+            let text = 'Чтобы быстрее найти ваш город, напишите его название снизу 🌇 \n\n Или впишите первые три-четыре буквы города и нажмите enter 👇';
             await ctx.reply(text, {
                 reply_markup: {
                     keyboard: [

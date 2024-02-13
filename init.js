@@ -167,6 +167,7 @@ bot.action('create', async (ctx) => {
                 ctx.reply('Вы просмотрели все доступные анкеты');
             }
         });
+
         // bot.command('search', async (ctx) => {
         //     try {
         //         const userCity = await getCityForUser(ctx.from.id); // Получаем город пользователя из БД

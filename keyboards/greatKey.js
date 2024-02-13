@@ -20,11 +20,12 @@ const startCommand = async (ctx) => {
             Markup.inlineKeyboard([
                 [
                     Markup.button.callback('ЗАПОЛНИТЕ АНКЕТУ 🚀', 'fill_form'),
-                    Markup.button.callback('Изменить свою анкету', 'update'),
+                    Markup.button.callback('Смотреть анкеты 💎', 'search'),
+
                 ],
                 [
-                    Markup.button.callback('Удалить свою анкету', 'delete'),
-                    Markup.button.callback('Посмотреть анкеты участников', 'search'),
+                    Markup.button.callback('Изменить свою анкету 📂', 'update'),
+                    Markup.button.callback('Удалить свою анкету 🗑', 'delete'),
                 ],
             ])
         );
