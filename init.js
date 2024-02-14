@@ -8,7 +8,8 @@ const geolib = require('geolib');
 const util = require('util');
 const { sendProfile } = require('./sendProfile')
 
-
+bot.hears('Вернуться в главное меню', startCommand);
+bot.command('start', startCommand);
 
 bot.use((ctx, next) => {
     if (!ctx.session) {
@@ -62,12 +63,13 @@ bot.action('create', async (ctx) => {
         ctx.reply('У вас нету заполненной анкеты.');
     }
 });
+    bot.action('update', (ctx) => {
+    startCommand(ctx);
+    });
+
     bot.action('updater', (ctx) => {
     startCommand(ctx);
     });
-    bot.action('update', (ctx) => {
-    startCommand(ctx);
-
     bot.action('delete', async (ctx) => {
             try {
                 await userDelete.deleteFunction(ctx);
@@ -76,17 +78,9 @@ bot.action('create', async (ctx) => {
                 ctx.reply('У вас нету заполненной анкеты.');
             }
     });
-        bot.action('delete', async (ctx) => {
-            try {
-                await userDelete.deleteFunction(ctx);
-            } catch (err) {
-                console.error(err);
-                ctx.reply('У вас нету заполненной анкеты.');
-            }
-        });
 
 
-        bot.action('like', async (ctx) => {
+    bot.action('like', async (ctx) => {
             const { profiles, currentProfileIndex } = ctx.session;
 
             if (profiles && Array.isArray(profiles) && currentProfileIndex < profiles.length) {
@@ -110,18 +104,6 @@ bot.action('create', async (ctx) => {
                     // Если нет ни имени пользователя, ни telegram_id
                     ctx.reply('Информация о контакте пользователя отсутствует.');
                 }
-
-                let text = `👻`;
-
-                ctx.reply(text, {
-                    reply_markup: {
-                        keyboard: [
-                            [{text: 'Вернуться в главное меню'}],
-                        ],
-                        resize_keyboard: true,
-                        one_time_keyboard: true,
-                    },
-                });
             }
         });
         bot.action('next', async (ctx) => {
@@ -168,6 +150,8 @@ bot.action('create', async (ctx) => {
             }
         });
 
+bot.launch()
+
         // bot.command('search', async (ctx) => {
         //     try {
         //         const userCity = await getCityForUser(ctx.from.id); // Получаем город пользователя из БД
@@ -212,7 +196,7 @@ bot.action('create', async (ctx) => {
 
 
 
-    });
+
 
 
 
@@ -266,8 +250,5 @@ bot.action('create', async (ctx) => {
 //     startCommand(ctx); // Вызываем функцию startCommand для отправки клавиатуры
 // });
 
-bot.hears('Вернуться в главное меню', startCommand);
-bot.command('start', startCommand);
 
-bot.launch()
 

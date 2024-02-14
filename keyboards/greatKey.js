@@ -24,7 +24,7 @@ const startCommand = async (ctx) => {
 
                 ],
                 [
-                    Markup.button.callback('Изменить свою анкету 📂', 'update'),
+                    Markup.button.callback('Изменить свою анкету 📂', 'fill_form'),
                     Markup.button.callback('Удалить свою анкету 🗑', 'delete'),
                 ],
             ])

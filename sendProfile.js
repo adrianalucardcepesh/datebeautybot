@@ -1,6 +1,6 @@
 const { Telegraf, Markup, Scenes, session } = require('telegraf');
 const db = require('./database/db-pool'); // Убедитесь в правильности пути к вашему модулю пула БД
-
+const bot = require('./config/config');
 
 const sendProfile = async (ctx) => {
     const { profiles, currentProfileIndex } = ctx.session;
@@ -9,17 +9,17 @@ const sendProfile = async (ctx) => {
         const profile = profiles[currentProfileIndex];
 
 
-        let text = `Анкета пользователя 🐱\n\n`;
+        let text = "Анкета пользователя 🐱\n\n";
 
-        // Добавляем клавиатуру после отправки медиафайла
-        ctx.reply(text, {
-            reply_markup: {
-                keyboard: [
-                    [{text: 'Вернуться в главное меню'}],
-                ],
-                resize_keyboard: true,
-                one_time_keyboard: true,
-            },
+// Добавляем клавиатуру после отправки медиафайла
+            ctx.reply(text, {
+                reply_markup: {
+                    keyboard: [
+                        [{text: 'Вернуться в главное меню'}],
+                    ],
+                    resize_keyboard: true,
+                    one_time_keyboard: true,
+                },
         });
 
 
