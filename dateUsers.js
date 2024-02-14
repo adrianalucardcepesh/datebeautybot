@@ -1,6 +1,7 @@
 const db = require('./database/db-pool.js');
 const { Telegraf, Markup, Scenes, session } = require('telegraf');
 const { sendProfile } = require('./sendProfile')
+const { sortProfilesByDistance } = require('./cities')
 
 async function dateUsers(ctx) {
     let conn;
@@ -60,6 +61,7 @@ async function dateUsers(ctx) {
         ctx.session.currentProfileIndex = 0;
 
 // Вызываем функцию sendProfile для отправки профиля
+        await sortProfilesByDistance()
         await sendProfile(ctx);
     } catch (err) {
         console.error('Ошибка при получении данных из базы данных:', err);
