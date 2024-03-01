@@ -74,5 +74,3 @@ async function dateUsers(ctx) {
 module.exports = {
     dateUsers
 }
-
-

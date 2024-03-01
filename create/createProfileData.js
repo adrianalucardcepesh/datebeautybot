@@ -42,8 +42,8 @@ const createProfileData = async (ctx, { telegramId, fileId, filePath, ...data })
         // Вставляем данные анкеты в таблицу users
         const insertSql = `
             INSERT INTO users
-            (telegram_id, username, name, surname, age, info, search, fileId, filePath, fileType)
-            VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
+            (telegram_id, username, name, surname, age, info, search, goal, fileId, filePath, fileType)
+            VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
                 ON DUPLICATE KEY UPDATE
                                      username = VALUES(username),
                                      name = VALUES(name),
@@ -51,6 +51,7 @@ const createProfileData = async (ctx, { telegramId, fileId, filePath, ...data })
                                      age = VALUES(age),
                                      info = VALUES(info),
                                      search = VALUES(search),
+                                     goal = VALUES(goal),
                                      fileId = VALUES(fileId),
                                      filePath = VALUES(filePath),
                                      fileType = VALUES(fileType)
@@ -63,6 +64,7 @@ const createProfileData = async (ctx, { telegramId, fileId, filePath, ...data })
             data.age,
             data.info,
             data.search,
+            data.goal,
             fileId,
             filePath, // Убедитесь что переменная filePath определена, или ее нужно заменить
             fileType // Предполагается, что fileType переменная уже определена и содержит правильное значение

@@ -7,6 +7,7 @@ const { dateUsers } = require ("./dateUsers")
 const geolib = require('geolib');
 const util = require('util');
 const { sendProfile } = require('./sendProfile')
+const  { findUsersByAgeRange } =require('./findUsersByAgeRange.js')
 
 bot.hears('Вернуться в главное меню', startCommand);
 bot.command('start', startCommand);
@@ -106,16 +107,44 @@ bot.action('create', async (ctx) => {
                 }
             }
         });
-        bot.action('next', async (ctx) => {
-            ctx.session.currentProfileIndex++;
 
-            // Зацикливание
-            if (ctx.session.currentProfileIndex >= ctx.session.profiles.length) {
-                ctx.session.currentProfileIndex %= ctx.session.profiles.length;
+bot.action('next', async (ctx) => {
+    // Убедитесь, что ctx.session.currentProfileIndex и ctx.session.profiles определены
+    if (ctx.session.profiles && typeof ctx.session.currentProfileIndex !== 'undefined') {
+        ctx.session.currentProfileIndex++; // Переместиться к следующей анкете
+        // Проверяем, не вышли ли мы за пределы списка анкет
+        if (ctx.session.currentProfileIndex < ctx.session.profiles.length) {
+            await sendProfile(ctx); // Отправить следующую анкету
+        } else {
+            // Если анкеты закончились, можно отправить сообщение об этом пользователю
+            ctx.reply('Больше анкет нет.');
+            // Или можно обнулить индекс, чтобы начать с первой анкеты снова
+            // ctx.session.currentProfileIndex = 0;
+            // await sendProfile(ctx);
+        }
+    } else {
+        // В случае отсутствия анкет или индекса, уведомить пользователя или загрузить анкеты
+        ctx.reply('Анкеты не найдены или возникла проблема с их загрузкой. Попробуйте снова.');
+    }
+});
 
-            }
-            await sendProfile(ctx);
+
+
+        bot.action('marketing', (ctx) => {
+            // Пользователь выбрал "Пожаловаться на анкету", запросим у него текст жалобы
+            ctx.session.complainStep = 'waiting_for_marketing';
+            ctx.reply('Пожалуйста, напишите нам в пиар компанию. Мы ответим вам в ближайшее время:');
         });
+
+        bot.on('text', (ctx) => {
+    if (ctx.session.complainStep === 'waiting_for_marketing') {
+        const complaintText = ctx.message.text;
+        bot.telegram.sendMessage(6247308978, `Запрос рекламы от  ${ctx.from.username || ctx.from.id}: ${complaintText}`);
+        ctx.reply('Мы отправили ваш запрос в нашу пиар компанию.');
+        // Сбросим состояние сессии
+        ctx.session.complainStep = null;
+    }
+});
 
         bot.action('complain', (ctx) => {
             // Пользователь выбрал "Пожаловаться на анкету", запросим у него текст жалобы
@@ -128,6 +157,7 @@ bot.action('create', async (ctx) => {
             ctx.session = ctx.session || {};
             return next();
         });
+
 
         // Обработчик для текстовых сообщений
         bot.on('text', (ctx) => {
@@ -149,6 +179,31 @@ bot.action('create', async (ctx) => {
                 ctx.reply('Вы просмотрели все доступные анкеты');
             }
         });
+
+    bot.command('check_users', async (ctx) => {
+    const currentUserAge = 15; // Это пример. На практике возраст можно получить другим способом
+    const ageMin = currentUserAge - 3;
+    const ageMax = currentUserAge + 3;
+
+    try {
+        const users = await findUsersByAgeRange(ageMin, ageMax);
+
+        let message = 'Пользователи, близкие к вашему возрасту:\n';
+        if (users.length) {
+            users.forEach(user => {
+                message += `${user.name}, ${user.age} лет\n`;
+            });
+        } else {
+            message += "Не найдено пользователей, соответствующих условиям поиска.";
+        }
+
+        ctx.reply(message);
+    } catch (err) {
+        ctx.reply('Произошла ошибка при получении данных из базы.');
+    }
+});
+
+
 
 bot.launch()
 

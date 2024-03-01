@@ -12,14 +12,14 @@ const sendProfile = async (ctx) => {
         let text = "Анкета пользователя 🐱\n\n";
 
 // Добавляем клавиатуру после отправки медиафайла
-            ctx.reply(text, {
-                reply_markup: {
-                    keyboard: [
-                        [{text: 'Вернуться в главное меню'}],
-                    ],
-                    resize_keyboard: true,
-                    one_time_keyboard: true,
-                },
+        ctx.reply(text, {
+            reply_markup: {
+                keyboard: [
+                    [{text: 'Вернуться в главное меню'}],
+                ],
+                resize_keyboard: true,
+                one_time_keyboard: true,
+            },
         });
 
 

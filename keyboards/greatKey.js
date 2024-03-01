@@ -27,6 +27,9 @@ const startCommand = async (ctx) => {
                     Markup.button.callback('Изменить свою анкету 📂', 'fill_form'),
                     Markup.button.callback('Удалить свою анкету 🗑', 'delete'),
                 ],
+                [
+                    Markup.button.callback('Маркетинг в Колибри ♔', 'marketing'),
+                ],
             ])
         );
        // await ctx.scene.enter('firstQuestion');

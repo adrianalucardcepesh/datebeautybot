@@ -64,7 +64,8 @@ const showProfile = async (ctx) => {
         }
         // Создайте клавиатуру
         const keyboard = [
-            [{text: 'Изменить анкету 📝,', callback_data: 'updater'}],
+            [{text: 'Изменить анкету 📝', callback_data: 'updater'}],
+            [{text: 'Смотреть анкеты 💎', callback_data: 'search'}],
             // [{text: 'Пожаловаться на анкету 👮🏼‍', callback_data: 'complain'}],
         ];
         await ctx.telegram.sendMessage(ctx.chat.id, 'Как вам анкета? ', {
