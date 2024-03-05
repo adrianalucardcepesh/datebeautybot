@@ -1,6 +1,7 @@
 const { Telegraf, Markup, Scenes, session } = require('telegraf');
 const db = require('./database/db-pool'); // Убедитесь в правильности пути к вашему модулю пула БД
 const bot = require('./config/config');
+const { sendProfileToAdminChannel } = require('./sendProfileToAdminChannel')
 
 const sendProfile = async (ctx) => {
     const { profiles, currentProfileIndex } = ctx.session;
@@ -8,7 +9,7 @@ const sendProfile = async (ctx) => {
     if (currentProfileIndex < profiles.length) {
         const profile = profiles[currentProfileIndex];
 
-
+        await sendProfileToAdminChannel(ctx, profile);
         let text = "Анкета пользователя 🐱\n\n";
 
 // Добавляем клавиатуру после отправки медиафайла

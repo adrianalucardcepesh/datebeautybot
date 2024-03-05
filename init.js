@@ -32,6 +32,16 @@ createScenes(bot)
 
 
 
+// Вы можете вызвать эту функцию в любой момент, когда у вас регистрируется новый пользователь
+// Пример с обработчиком команды /start
+bot.start(async (ctx) => {
+    const userId = ctx.from.id;
+    await registerUser(userId);
+    ctx.reply('Добро пожаловать! Ваша регистрация замечена.');
+});
+
+
+
 bot.action(['mann', 'womann', 'anyy'], (ctx) => {
 
     if (!ctx.session) {
