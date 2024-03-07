@@ -2,14 +2,14 @@ const { Telegraf, Markup, Scenes, session } = require('telegraf');
 const db = require('./database/db-pool'); // Убедитесь в правильности пути к вашему модулю пула БД
 const bot = require('./config/config');
 const { sendProfileToAdminChannel } = require('./sendProfileToAdminChannel')
-
+const { sendProfileToPiarChannel } = require('./sendProfileToPiarChannel')
 const sendProfile = async (ctx) => {
     const { profiles, currentProfileIndex } = ctx.session;
 
     if (currentProfileIndex < profiles.length) {
         const profile = profiles[currentProfileIndex];
-
-        await sendProfileToAdminChannel(ctx, profile);
+        // await sendProfileToPiarChannel (ctx, profile)
+        // await sendProfileToAdminChannel(ctx, profile);
         let text = "Анкета пользователя 🐱\n\n";
 
 // Добавляем клавиатуру после отправки медиафайла
@@ -50,8 +50,12 @@ const sendProfile = async (ctx) => {
         const keyboard = [
             [{ text: 'Пообщаться ‍🔥', callback_data: 'like' }],
             [{ text: 'Следующая анкета 🔎', callback_data: 'next' }],
-            [{text: 'Пожаловаться на анкету 👮🏼‍', callback_data: 'complain'}],
-        ];
+            [{ text: 'Приватный чат 🎉', callback_data: 'piar'}],
+            [{ text: 'Пожаловаться на анкету 👮🏼‍', callback_data: 'complain'}],
+            ];
+
+
+
 
         // Отправьте клавиатуру и сообщение с анкетой
         await ctx.telegram.sendMessage(ctx.chat.id, 'Как вам анкета? ', {
