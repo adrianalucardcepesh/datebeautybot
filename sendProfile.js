@@ -1,8 +1,7 @@
 const { Telegraf, Markup, Scenes, session } = require('telegraf');
-const db = require('./database/db-pool'); // Убедитесь в правильности пути к вашему модулю пула БД
-const bot = require('./config/config');
-const { sendProfileToAdminChannel } = require('./sendProfileToAdminChannel')
-const { sendProfileToPiarChannel } = require('./sendProfileToPiarChannel')
+
+// const { sendProfileToAdminChannel } = require('./sendProfileToAdminChannel')
+// const { sendProfileToPiarChannel } = require('./sendProfileToPiarChannel')
 const sendProfile = async (ctx) => {
     const { profiles, currentProfileIndex } = ctx.session;
 
@@ -52,7 +51,7 @@ const sendProfile = async (ctx) => {
             [{ text: 'Следующая анкета 🔎', callback_data: 'next' }],
             [{ text: 'Приватный чат 🎉', callback_data: 'piar'}],
             [{ text: 'Пожаловаться на анкету 👮🏼‍', callback_data: 'complain'}],
-            ];
+        ];
 
 
 

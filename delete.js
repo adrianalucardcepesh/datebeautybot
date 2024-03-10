@@ -1,5 +1,5 @@
-const db = require('./database/db-pool.js');
 
+const db = require('./database/db-pool');
 
 const deleteUser = async (userId) => {
     let conn;
@@ -14,16 +14,12 @@ const deleteUser = async (userId) => {
             return false; // Пользователь не найден
         }
     } catch (err) {
-        console.error(err);
+        console.error('Ошибка при удалении анкеты:', err);
         return false; // Ошибка при удалении пользователя
     } finally {
         if (conn) conn.end();
     }
 };
-
-
-
-
 
 const deleteFunction = async (ctx) => {
     const userId = ctx.from.id; // Получение userId из объекта ctx
@@ -31,17 +27,16 @@ const deleteFunction = async (ctx) => {
     try {
         userDeleted = await deleteUser(userId);
     } catch (err) {
-        console.error(err);
+        console.error('Ошибка при выполнении функции удаления:', err);
     }
     if (userDeleted) {
-        ctx.reply('Ваша анкета успешно удалена');
+        ctx.reply('🎉 Ваша анкета была успешно удалена! Вы всегда можете создать новую, если захотите вернуться.');
     } else {
-        ctx.reply('У вас нету заполненной анкеты');
+        ctx.reply('😕 Кажется, у вас нет заполненной анкеты. Если хотите создать её, просто воспользуйтесь соответствующей командой.');
     }
 };
-
-
 
 module.exports = {
     deleteFunction
 };
+

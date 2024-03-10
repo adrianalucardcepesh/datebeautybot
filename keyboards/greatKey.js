@@ -1,5 +1,6 @@
 const { Telegraf, Markup, Scenes, session } = require('telegraf');
-const bot = require('../config/config');
+
+
 
 const isAdmin = async (ctx) => {
     const member = await ctx.telegram.getChatMember(ctx.chat.id, ctx.from.id);
@@ -26,14 +27,14 @@ const startCommand = async (ctx) => {
                 Markup.button.callback('Смотреть анкеты 💎', 'search'),
             ],
             [
-                Markup.button.callback('Изменить свою анкету 📂', 'fill_form'),
+                Markup.button.callback('Изменить свою анкету 📂', 'filly_form'),
                 Markup.button.callback('Удалить свою анкету 🗑', 'delete'),
             ],
             [
                 Markup.button.callback('Узнать о пиар компании 📣', 'piar')
             ],
                 [
-                Markup.button.callback('Приватный чат 🎉', 'piar')
+                Markup.button.callback('Приватный чат 🎉', 'piarr')
                 ]
 
         ];
